@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Egg Timer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="manifest" href="/static/manifest.json">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      color: #212529;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 900px;
+      margin-top: 60px;
+      animation: fadeIn 1s ease;
+    }
+
+    .timer-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .dark-mode .timer-card {
+      background: #1e1e1e;
+      color: #f8f9fa;
+    }
+
+    .timer-card:hover {
+      transform: scale(1.01);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    .form-control, .form-select {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .dark-mode .form-control,
+    .dark-mode .form-select {
+      background-color: #2c2c2c !important;
+      color: #f8f9fa !important;
+      border: 1px solid #444 !important;
+    }
+
+    .dark-mode .form-control::placeholder {
+      color: #ccc !important;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border-color: #0d6efd;
+    }
+
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+    }
+
+    .toggle-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .form-check {
+      margin-top: 10px;
+    }
+
+    .progress-bar {
+      transition: width 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-switch">
+    <button class="btn btn-outline-dark" onclick="toggleDarkMode()">🌙</button>
+  </div>
+  <div class="container text-center">
+    <h1 class="mb-4"><span style="font-size: 2em;"></span> EGG-TIMER</h1>
+
+    <!-- 🟡 Timer Icon -->
+    <img id="timer-icon" src="/static/icons/timer-idle.png" alt="Timer Icon" width="100" class="mb-4">
+
+    <form id="timer-form" class="row g-3 justify-content-center">
+      <div class="col-2">
+        <input type="number" class="form-control" placeholder="Hours" id="hours" min="0">
+      </div>
+      <div class="col-2">
+        <input type="number" class="form-control" placeholder="Minutes" id="minutes" min="0">
+      </div>
+      <div class="col-2">
+        <input type="number" class="form-control" placeholder="Seconds" id="seconds" min="0">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" placeholder="e.g. Egg" id="label">
+      </div>
+      <div class="col-3">
+        <button type="submit" class="btn btn-primary w-100">Add Timer</button>
+      </div>
+      <div class="col-12 form-check text-start ps-4">
+        <input class="form-check-input" type="checkbox" id="repeatTimer">
+        <label class="form-check-label" for="repeatTimer">
+          Repeat timer when finished
+        </label>
+      </div>
+    </form>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <select id="presetSelect" class="form-select">
+          <option value="">🎯 Quick Presets</option>
+          <option value="180">3 min (Egg)</option>
+          <option value="300">5 min (Coffee)</option>
+          <option value="600">10 min (Tea)</option>
+          <option value="1200">20 min (Meditation)</option>
+          <option value="1800">30 min (Workout)</option>
+          <option value="2700">45 min (Power nap)</option>
+          <option value="3600">1 hr (Television)</option>
+          <option value="7200">2 hr (Study Session)</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <select id="soundSelect" class="form-select">
+          <option value="/static/sounds/beep.mp3">🔔 Beep</option>
+          <option value="/static/sounds/beep-clock.mp3">⏰ Clock Beep</option>
+          <option value="/static/sounds/alarmclock.mp3">🚨 Alarm Clock</option>
+          <option value="/static/sounds/church-bell.mp3">⛪ Church Bell</option>
+          <option value="/static/sounds/gong.mp3">🎐 Gong</option>
+          <option value="/static/sounds/whistle.mp3">🎵 Whistle</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="timers" class="mt-4"></div>
+
+    <audio id="alarm-sound" src="/static/sounds/beep.mp3"></audio>
+  </div>
+
+  <script>
+    const timersDiv = document.getElementById("timers");
+    const alarmSound = document.getElementById("alarm-sound");
+    const timerIcon = document.getElementById("timer-icon");
+
+    function setRunningIcon(isRunning) {
+      timerIcon.src = isRunning
+        ? "/static/icons/timer-running.png"
+        : "/static/icons/timer-idle.png";
+    }
+
+    // Auto dark mode if after 7PM
+    window.addEventListener("DOMContentLoaded", () => {
+      const hour = new Date().getHours();
+      if (hour >= 19) {
+        document.body.classList.add("dark-mode");
+      } else if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add("dark-mode");
+      }
+    });
+
+    function toggleDarkMode() {
+      const isDark = document.body.classList.toggle("dark-mode");
+      localStorage.setItem('darkMode', isDark);
+    }
+
+    if ("Notification" in window && Notification.permission !== "granted") {
+      Notification.requestPermission();
+    }
+
+    document.getElementById("soundSelect").addEventListener("change", (e) => {
+      alarmSound.src = e.target.value;
+      alarmSound.play(); // Preview
+    });
+
+    document.getElementById("presetSelect").addEventListener("change", (e) => {
+      const seconds = parseInt(e.target.value);
+      if (!isNaN(seconds)) {
+        createTimer(seconds, e.target.options[e.target.selectedIndex].text, false);
+        e.target.selectedIndex = 0;
+      }
+    });
+
+    document.getElementById("timer-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const h = parseInt(document.getElementById("hours").value) || 0;
+      const m = parseInt(document.getElementById("minutes").value) || 0;
+      const s = parseInt(document.getElementById("seconds").value) || 0;
+      const label = document.getElementById("label").value || "Timer";
+      const repeat = document.getElementById("repeatTimer").checked;
+
+      const total = h * 3600 + m * 60 + s;
+      if (total > 0) {
+        createTimer(total, label, repeat);
+        this.reset();
+      }
+    });
+
+    function createTimer(duration, label, repeat) {
+      setRunningIcon(true);
+
+      const card = document.createElement("div");
+      card.className = "timer-card";
+
+      const timeText = document.createElement("h4");
+      timeText.innerText = label + " - " + formatTime(duration);
+      timeText.contentEditable = true;
+
+      const progress = document.createElement("div");
+      progress.className = "progress my-2";
+      const bar = document.createElement("div");
+      bar.className = "progress-bar progress-bar-striped bg-success";
+      bar.style.width = "100%";
+      progress.appendChild(bar);
+
+      const controls = document.createElement("div");
+      controls.innerHTML = `
+        <button class="btn btn-sm btn-outline-success me-2">Pause</button>
+        <button class="btn btn-sm btn-outline-danger">Reset</button>
+      `;
+
+      card.appendChild(timeText);
+      card.appendChild(progress);
+      card.appendChild(controls);
+      timersDiv.appendChild(card);
+
+      let timeLeft = duration;
+      const fullTime = duration;
+      let paused = false;
+
+      const interval = setInterval(() => {
+        if (!paused) {
+          timeLeft--;
+          timeText.innerText = label + " - " + formatTime(timeLeft);
+          bar.style.width = (timeLeft / fullTime) * 100 + "%";
+
+          if (timeLeft <= 0) {
+            clearInterval(interval);
+            timeText.innerText = label + " - Done!";
+            bar.classList.add("bg-success");
+
+            if ("Notification" in window && Notification.permission === "granted") {
+              new Notification(`${label} is done!`);
+            }
+
+            confetti();
+            alarmSound.play();
+
+            setRunningIcon(false);
+
+            if (repeat) {
+              setTimeout(() => createTimer(fullTime, label, repeat), 1000);
+            } else {
+              setTimeout(() => {
+                timersDiv.removeChild(card);
+              }, 5000);
+            }
+          }
+        }
+      }, 1000);
+
+      const [pauseBtn, resetBtn] = controls.querySelectorAll("button");
+      pauseBtn.onclick = () => {
+        paused = !paused;
+        pauseBtn.textContent = paused ? "Resume" : "Pause";
+      };
+
+      resetBtn.onclick = () => {
+        clearInterval(interval);
+        timersDiv.removeChild(card);
+        setRunningIcon(false);
+      };
+    }
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60);
+      const s = sec % 60;
+      return `${m}:${s.toString().padStart(2, '0')}`;
+    }
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      }).catch((error) => {
+        console.error('Service Worker registration failed:', error);
+      });
+    }
+  </script>
+</body>
+</html>
