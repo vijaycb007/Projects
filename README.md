@@ -37,32 +37,24 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 - 🎨 **Bootstrap 5** for selected UIs
 ---
  ##For Hands2Speech
+
 🌐 Frontend
-🧱 HTML5, 🎨 CSS3, ⚙️ JavaScript
-
-💨 Tailwind CSS
-
-🔤 Google Fonts
-
-📷 Web UI for real-time webcam integration
+-🧱 HTML5, 🎨 CSS3, ⚙️ JavaScript
+-💨 Tailwind CSS
+-🔤 Google Fonts
+-📷 Web UI for real-time webcam integration
 
 🧠 Backend & Logic
-🐍 Python
-
-🌐 Flask (for backend integration)
-
-👁️‍🗨️ OpenCV (webcam and image processing)
-
-✋ MediaPipe (hand tracking & landmarks)
-
-📊 NumPy, 🧾 pandas (data handling)
+-🐍 Python
+-🌐 Flask (for backend integration)
+-👁️‍🗨️ OpenCV (webcam and image processing)
+-✋ MediaPipe (hand tracking & landmarks)
+-📊 NumPy, 🧾 pandas (data handling)
 
 🤖 Machine Learning
-🔧 TensorFlow / Keras
-
-🧬 BiLSTM model (for sign classification)
-
-🗃️ Preprocessed CSV / NumPy datasets
+-🔧 TensorFlow / Keras
+-🧬 BiLSTM model (for sign classification)
+-🗃️ Preprocessed CSV / NumPy datasets
 
 ---
 
