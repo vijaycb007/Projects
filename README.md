@@ -10,7 +10,7 @@ Welcome to my collection of React projects! This repository includes a set of fr
 |--------------|-------------|
 | [🎯 todo-app](./todo-app) | A simple and elegant To-Do list app with add/delete features, responsive UI, and local storage support. |
 | [🎬 imdb-clone](./imdb-clone) | A mini IMDb clone that fetches movie data using an API and displays trending content with search functionality. |
-| [⏱️ egg-timer](./egg-timer) | A full-featured web-based timer app with customizable countdowns, sound alerts, and progressive web app (PWA) support. Built with Flask and enhanced with service workers for offline use. |
+| [⏱️ egg-timer](./egg-timer) | A full-featured web-based timer app with customizable countdowns, sound alerts, and offline support via Progressive Web App (PWA) features. Built with Flask and enhanced using service workers.|
 | [🌦️ skycast](./skycast) | A modern weather app with live video backgrounds based on real-time weather conditions, animated splash screen, responsive UI, and smooth video transitions. Powered by OpenWeatherMap API with beautiful climate-based video effects. |
 
 ---
