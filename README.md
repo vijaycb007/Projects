@@ -15,7 +15,8 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 ---
 
 ## 📁 Python Projects
-
+| Project Name | Description |
+|--------------|-------------|
 | [⏱️ egg-timer](./egg-timer) | A full-featured web-based timer app with customizable countdowns, sound alerts, and offline support via Progressive Web App (PWA) features. Built with Flask and enhanced using service workers.|
 | [👋Hands2Speech]() |**Hands2Speech** is a real-time sign language translator that converts hand signs into text and speech using computer vision and deep learning. It bridges the communication gap for the hearing-impaired through an intuitive, web-based interface.|
 
