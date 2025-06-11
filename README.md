@@ -38,6 +38,10 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 
 ---
 
+For Hands2speech only the scripts are present not the data so you have to prepare a dataset yourself.
+
+---
+
 ## 📦 How to Run a Project
 
 Navigate into any project folder and run:
