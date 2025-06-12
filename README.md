@@ -1,96 +1,71 @@
-# 🤟 Hands2Speech – A Sign Language Translator
+# 🚀 Projects Showcase
 
-**Hands2Speech** is a real-time sign language translator using computer vision and AI. This tool enables translation of hand signs into speech, helping bridge the communication gap.
-
----
-
-## 🖥️ System Requirements
-
-> **Important**: You must have a **Webcam** on your PC/Laptop for this application to work.
+Welcome to my collection of Projects! This repository includes a set of frontend apps built using modern JavaScript, React.js, and related tools. Each project is organized into its own folder and includes full source code, ready to run.
 
 ---
 
-## ⚙️ Setup Instructions (One-Time Installation)
+## 📁 React Projects
 
-### ✅ Step 1: Install Python 3.10.7
-- [Download Python 3.10.7](https://www.python.org/downloads/release/python-3107?utm_source=chatgpt.com)
-- Or [download from Google Drive](#)
-- **Video Guide**: [Watch on YouTube](https://youtu.be/mBATeSB1tH8?si=a0MnH2D3b1ku7iJV)
-
----
-
-### ✅ Step 2: Install an IDE (Recommended: VS Code)
-- [Download VS Code](https://code.visualstudio.com/docs/?dv=win64user)
-- Or [download from Google Drive](#)
-- **Video Guide**: [Watch on YouTube](https://youtu.be/cu_ykIfBprI?si=pOyiEvHhEMgBl0b4)
+| Project Name | Description |
+|--------------|-------------|
+| [🎯 todo-app](./todo-app) | A simple and elegant To-Do list app with add/delete features, responsive UI, and local storage support. |
+| [🎬 imdb-clone](./imdb-clone) | A mini IMDb clone that fetches movie data using an API and displays trending content with search functionality. |
+| [🌦️ skycast](./skycast) | A modern weather app with live video backgrounds based on real-time weather conditions, animated splash screen, responsive UI, and smooth video transitions. Powered by OpenWeatherMap API with beautiful climate-based video effects. |
 
 ---
 
-### ✅ Step 3: Download Project Files
-- Download the **entire folder** from the provided [Google Drive](#) link.
+## 📁 Python Projects
+| Project Name | Description |
+|--------------|-------------|
+| [⏱️ egg-timer](./egg-timer) | A full-featured web-based timer app with customizable countdowns, sound alerts, and offline support via Progressive Web App (PWA) features. Built with Flask and enhanced using service workers.|
+| [👋Hands2Speech]() |**Hands2Speech** is a real-time sign language translator that converts hand signs into text and speech using computer vision and deep learning. It bridges the communication gap for the hearing-impaired through an intuitive, web-based interface.|
 
 ---
 
-### ✅ Step 4: Set Up Folder
-- Place the **entire folder** inside your **C: Drive** (where Python is installed).
+## 🛠 Tech Stack
+
+- ⚛️ **React.js**
+- 🎨 **Tailwind CSS**
+- 📦 **Vite / Create React App**
+- 🔗 **Axios / Fetch API**
+- 🎞 **Dynamic Video Backgrounds**
+- 🌦️ **OpenWeatherMap API Integration**
+
+- 🐍 **Flask** (Python backend for Egg Timer)
+- 🌐 **Service Workers** (for offline support)
+- 🔔 **Custom Sounds & Notifications**
+- 🎨 **Bootstrap 5** for selected UIs
+---
+ ##For Hands2Speech
+
+🌐 Frontend
+-🧱 HTML5, 🎨 CSS3, ⚙️ JavaScript
+-💨 Tailwind CSS
+-🔤 Google Fonts
+-📷 Web UI for real-time webcam integration
+
+🧠 Backend & Logic
+-🐍 Python
+-🌐 Flask (for backend integration)
+-👁️‍🗨️ OpenCV (webcam and image processing)
+-✋ MediaPipe (hand tracking & landmarks)
+-📊 NumPy, 🧾 pandas (data handling)
+
+🤖 Machine Learning
+-🔧 TensorFlow / Keras
+-🧬 BiLSTM model (for sign classification)
+-🗃️ Preprocessed CSV / NumPy datasets
 
 ---
 
-### ✅ Step 5: Open the Project in VS Code
-- Navigate to the folder.
-- Open the `app.py` file in VS Code.
+For Hands2speech only the scripts are present not the data so you have to prepare a dataset yourself.
 
 ---
 
-### ✅ Step 6: Setup Python Environment
-Open a **new terminal** in VS Code and run the following one by one:
+## 📦 How to Run a Project
+
+Navigate into any project folder and run:
 
 ```bash
-python -m venv venv
-.env\Scriptsctivate
-```
-
----
-
-### ✅ Step 7: Run the Translator
-```bash
-python app.py
-```
-
----
-
-### ✅ Step 8: Access the Web App
-- After running `app.py`, you’ll see a link in the terminal like:
-
-```
-http://127.0.0.1:5000
-```
-
-- Hold `CTRL` + Click the link to open it in your browser.
-
----
-
-## 🧠 How to Use the Translator
-
-### 🎯 Steps to Start Translation
-
-1. Click **Start Translate** button.
-2. Choose either:
-   - `1 Hand` or
-   - `2 Hand` option.
-3. Wait for the model to load (~1 minute).
-4. Once the webcam opens, start showing hand signs.
-5. If you close the app, **just re-run `app.py` and click the link again**.
-
----
-
-## 📬 Contact & Support
-
-- **Email**: [hands2speech@gmail.com](mailto:hands2speech@gmail.com)
-- **GitHub (1 Hand Dataset)**: [Visit Repo](https://github.com/final-year-project-SDC/Hands2Speech)
-
-> 💡 **Note**: Datasets are not included in this folder. For access, please reach out via email.
-
----
-
-### 🙌 Happy Translation! 👍👌
+npm install
+npm run dev
