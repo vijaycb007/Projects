@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState } from "react";
 import TodoContainer from "./components/TodoContainer";
-import InputContainer from "./components/inputContainer";
+import InputContainer from "./components/InputContainer";
 
 function App() {
   const [inputVal, setInputval] = useState("");
