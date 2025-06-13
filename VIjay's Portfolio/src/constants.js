@@ -24,7 +24,7 @@ import adobexdLogo from './assets/tech_logo/adobexd.png';
 import Rablologo from './assets/company_logo/Rablologo.png';
 
 // // Education Section Logo's
-import sdcLogo from './assets/education_logo/sdcLogo.jpg';
+import sdcLogo from './assets/education_logo/sdclogo.jpg';
 import vvcLogo from './assets/education_logo/vvclogo.jpeg';
 import svcLogo from './assets/education_logo/svclogo.png';
 
