@@ -44,6 +44,7 @@ import digitalmaven from './assets/certificates/digitalmaven.jpeg';
 import html from './assets/certificates/html.jpeg';
 import javascript from './assets/certificates/javascript.jpeg';
 import react from './assets/certificates/react.png';
+import reacttest from './assets/certificates/reacttest.jpg';
 
 export const SkillsInfo = [
   {
@@ -172,6 +173,19 @@ export const certificates = [
         "Web Development",
         "Vite",
         "Tailwind CSS",
+      ],
+    },
+  {
+      id: 6,
+      img: reacttest,
+      name: "Frontend Developer (React.js)",
+      company: "HackerRank",
+      date: "June 2025",
+      desc: "Completed a test for the course of React.js by HackerRank.",
+      skills: [
+        "React",
+        "JavaScript",
+        "CSS",
       ],
     },
   ];
