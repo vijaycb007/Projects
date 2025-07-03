@@ -221,7 +221,7 @@ export const experiences = [
       img: sdcLogo,
       school: "Seshadrtipuram Degree College, Mysuru",
       date: "Sept 2022 - June 2025",
-      grade: "9.04 CGPA",
+      grade: "9.09 CGPA",
       desc: "I have completed my Bachelor's degree (BCA) in Computer Applications from Seshadrtipuram Degree College, Mysuru. During my time at Seshadrtipuram, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. My experience at Seshadrtipuram Degree College has been instrumental in shaping my technical abilities and professional growth.",
       degree: "Bachelor of Computer Applications - BCA",
     },
