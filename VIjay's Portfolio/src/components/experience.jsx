@@ -21,10 +21,10 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className="relative z-0">
+     <div className="relative z-0">
         {/* Vertical line behind cards */}
         <div
-          className={`absolute sm:center-1/2 transform -translate-x-1/2 sm:-translate-x-0 w-1 ${
+          className={`absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 ${
             isDark ? "bg-white" : "bg-orange-400"
           } h-full z-0`}
         ></div>
