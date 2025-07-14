@@ -1,9 +1,9 @@
 import React from "react";
 import { experiences } from "../constants";
-import { useTheme } from "../ThemeContext.jsx"; // ← use context
+import { useTheme } from "../ThemeContext.jsx";
 
 const Experience = () => {
-  const { theme } = useTheme(); // ← get theme
+  const { theme } = useTheme();
   const isDark = theme === "dark";
 
   return (
@@ -33,21 +33,16 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className="relative">
-        {/* {isDark && (
-          <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
-        )} */}
-
-         <div className="relative z-0">
+      <div className="relative flex flex-col items-center">
         {/* Vertical line behind cards */}
         <div
-          className={`absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 ${
+          className={`absolute top-0 bottom-0 sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 ${
             isDark ? "bg-white" : "bg-orange-400"
-          } h-full z-0`}
+          }`}
         ></div>
 
         {experiences.map((experience) => (
-          <div key={experience.id} className="flex justify-center mb-16">
+          <div key={experience.id} className="flex justify-center mb-16 z-10">
             <div
               className={`w-full sm:max-w-2xl p-6 sm:p-8 rounded-2xl border transform transition-transform duration-300 hover:scale-[1.02] ${
                 isDark
