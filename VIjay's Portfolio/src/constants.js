@@ -22,6 +22,7 @@ import adobexdLogo from './assets/tech_logo/adobexd.png';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
+import jspiderslogo from './assets/company_logo/jspiders_logo.jpeg';
 
 // // Education Section Logo's
 import sdcLogo from './assets/education_logo/sdclogo.jpg';
@@ -211,6 +212,17 @@ export const experiences = [
         "Design Systems",
         "UI/UX Design",
         "Product Design",
+      ],
+    },
+  {
+      id: 1,
+      img: jspiderslogo,
+      role: "Java FullStack developer Trainee",
+      company: "JSpiders",
+      date: "July 2025 - present",
+      desc: "Joined as a trainee in Jspiders as a Java FullStack developer.",
+      skills: [
+        "SQL",
       ],
     },
   ];
