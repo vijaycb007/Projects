@@ -10,7 +10,6 @@ import flaskLogo from './assets/tech_logo/flask.png';
 import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import figmaLogo from './assets/tech_logo/figma.png';
-import mysqlLogo from './assets/tech_logo/mysql.png';
 import cLogo from './assets/tech_logo/c.png';
 import cppLogo from './assets/tech_logo/cpp.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
@@ -19,6 +18,8 @@ import jiraLogo from './assets/tech_logo/jira.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import msofficeLogo from './assets/tech_logo/msoffice.png';
 import adobexdLogo from './assets/tech_logo/adobexd.png';
+import sqlLogo from './assets/tech_logo/sql.jpeg';
+import javaLogo from './assets/tech_logo/java_logo.jpg';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
@@ -63,15 +64,16 @@ export const SkillsInfo = [
     skills: [
       { name: 'Flask', logo: flaskLogo },
       { name: 'PHP', logo: phpLogo },
-      { name: 'MySQL', logo: mysqlLogo },
+      { name: 'SQL', logo: sqlLogo },
     ],
   },
   {
     title: 'Languages',
     skills: [
+      { name: 'Python', logo: pythonLogo },
+      { name: 'Python', logo: javaLogo },
       { name: 'C', logo: cLogo },
       { name: 'C++', logo: cppLogo },
-      { name: 'Python', logo: pythonLogo },
       { name: 'R Programming', logo: rLogo },
     ],
   },
@@ -231,10 +233,10 @@ export const experiences = [
     {
       id: 0,
       img: sdcLogo,
-      school: "Seshadrtipuram Degree College, Mysuru",
+      school: "Seshadripuram Degree College, Mysuru",
       date: "Sept 2022 - June 2025",
       grade: "9.2 CGPA",
-      desc: "I have completed my Bachelor's degree (BCA) in Computer Applications from Seshadrtipuram Degree College, Mysuru. During my time at Seshadrtipuram, I gained a strong foundation in programming, software development, and computer science principles. I have studied courses such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Web Development, and Software Engineering. My experience at Seshadrtipuram Degree College has been instrumental in shaping my technical abilities and professional growth.",
+      desc: "I completed my BCA from Seshadripuram Degree College, Mysuru, where I built a strong foundation in programming, software development, and computer science. My coursework included Data Structures, OOP, DBMS, Web Development, and Software Engineering, shaping both my technical skills and professional growth.",
       degree: "Bachelor of Computer Applications - BCA",
     },
     {
@@ -253,7 +255,7 @@ export const experiences = [
       date: "Apr 2011 - March 2020",
       grade: "87%",
       desc: "I completed my class 10 education from Sri Vidya Convent, Mysuru, under the State board, where I studied all the subjects including Maths, Social Science, and Science with some languages.",
-      degree: "State Board (Class 1 - Class 10)",
+      degree: "Karnataka State Board (Class 1 - Class 10)",
     },
   ];
   
