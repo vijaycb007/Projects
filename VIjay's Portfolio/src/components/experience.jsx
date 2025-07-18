@@ -17,7 +17,7 @@ const Experience = () => {
         </h2>
         <div className={`w-32 h-1 mx-auto mt-4 ${isDark ? "bg-purple-500" : "bg-[#ff6600]"}`}></div>
         <p className={`mt-4 text-lg ${isDark ? "text-gray-400 font-semibold" : "text-gray-600 font-medium"}`}>
-          My internship and work experience reflect the roles and responsibilities I’ve handled in different organizations..
+         Internship & Work Experience Across Roles and Organizations.
         </p>
       </div>
 
