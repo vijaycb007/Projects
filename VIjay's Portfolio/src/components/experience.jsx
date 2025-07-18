@@ -79,21 +79,24 @@ const Experience = () => {
                 </ul>
               </div>
              <a
-            href={experience.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
-            style={{
-              background: isLight
-                ? "linear-gradient(90deg, #f97316, #fb923c)"
-                : "linear-gradient(90deg, #8245ec, #a855f7)",
-              boxShadow: isLight
-                ? "0 0 4px #f97316, 0 0 6px #f97316, 0 0 25px #fdba74"
-                : "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
-            }}
-          >
-            CERTIFICATE
-          </a>
+            {experience.link && experience.link.trim() !== "" && (
+  <a
+    href={experience.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
+    style={{
+      background: !isDark
+        ? "linear-gradient(90deg, #f97316, #fb923c)"
+        : "linear-gradient(90deg, #8245ec, #a855f7)",
+      boxShadow: !isDark
+        ? "0 0 4px #f97316, 0 0 6px #f97316, 0 0 25px #fdba74"
+        : "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+    }}
+  >
+    CERTIFICATE
+  </a>
+)}
             </div>
           </div>
         ))}
