@@ -215,6 +215,7 @@ export const experiences = [
         "UI/UX Design",
         "Product Design",
       ],
+      link: "https://drive.google.com/file/d/1m4AFlKnasYi1BXeDl0Ky9veaiRbuLTW5/view?usp=sharing",
     },
   {
       id: 1,
@@ -226,6 +227,7 @@ export const experiences = [
       skills: [
         "SQL",
       ],
+    link: "",
     },
   ];
   
