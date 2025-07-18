@@ -18,7 +18,7 @@ import jiraLogo from './assets/tech_logo/jira.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import msofficeLogo from './assets/tech_logo/msoffice.png';
 import adobexdLogo from './assets/tech_logo/adobexd.png';
-import sqlLogo from './assets/tech_logo/sql.jpeg';
+import sqlLogo from './assets/tech_logo/Sql.jpeg';
 import javaLogo from './assets/tech_logo/java_logo.jpg';
 
 // Experience Section Logo's
