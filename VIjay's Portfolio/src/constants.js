@@ -71,7 +71,7 @@ export const SkillsInfo = [
     title: 'Languages',
     skills: [
       { name: 'Python', logo: pythonLogo },
-      { name: 'Python', logo: javaLogo },
+      { name: 'Java', logo: javaLogo },
       { name: 'C', logo: cLogo },
       { name: 'C++', logo: cppLogo },
       { name: 'R Programming', logo: rLogo },
@@ -332,3 +332,4 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
