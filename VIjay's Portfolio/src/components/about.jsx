@@ -45,7 +45,7 @@ const About = () => {
                 "Frontend Developer",
                 "Web Developer",
                 "UI/UX Designer",
-                "Coder",
+                "SQL Developer",
               ]}
               loop={false}
               cursor
@@ -115,3 +115,4 @@ const About = () => {
 };
 
 export default About;
+
