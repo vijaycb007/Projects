@@ -11,7 +11,7 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 | [🎯 todo-app](./todo-app) | A simple and elegant To-Do list app with add/delete features, responsive UI, and local storage support. |
 | [🎬 imdb-clone](./imdb-clone) | A mini IMDb clone that fetches movie data using an API and displays trending content with search functionality. |
 | [🌦️ skycast](./skycast) | A modern weather app with live video backgrounds based on real-time weather conditions, animated splash screen, responsive UI, and smooth video transitions. Powered by OpenWeatherMap API with beautiful climate-based video effects. |
-| [💼 My-portfolio](./vijay's portfolio) | A responsive, modern developer portfolio built with React, Vite, and Tailwind CSS. Showcases my featured projects, skills, and contact information — all in a sleek single-page design.|
+| [💼 My-portfolio] | A responsive, modern developer portfolio built with React, Vite, and Tailwind CSS. Showcases my featured projects, skills, and contact information — all in a sleek single-page design.|
 
 ---
 
