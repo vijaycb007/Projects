@@ -38,11 +38,12 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 - 🔗 **Axios / Fetch API**
 - 🎞 **Dynamic Video Backgrounds**
 - 🌦️ **OpenWeatherMap API Integration**
-
 - 🐍 **Flask** (Python backend for Egg Timer)
 - 🌐 **Service Workers** (for offline support)
 - 🔔 **Custom Sounds & Notifications**
 - 🎨 **Bootstrap 5** for selected UIs
+- 💻 **Java**
+- 📈 **SQL**
 ---
  ##For Hands2Speech
 
