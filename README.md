@@ -23,6 +23,14 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 
 ---
 
+## 📁 Java Project
+| Project Name | Description |
+|--------------|-------------|
+| [🏦 Bank Management System ](./egg-timer) | Mini Banking Application – Core Java, JDBC, MySQL
+Built a console-based banking system with account creation, login, balance inquiry, deposit/withdraw with validation, transaction history, and account deletion that also removes related transactions. Used DAO pattern with JDBC to connect Java and MySQL.|
+
+---
+
 ## 🛠 Tech Stack
 
 - ⚛️ **React.js**
