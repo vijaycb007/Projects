@@ -37,6 +37,8 @@ import eggtimer from './assets/work_logo/eggtimer.png';
 import skycast from './assets/work_logo/skycast.png';
 import imdbclone from './assets/work_logo/imdbclone.png';
 import buzzly from './assets/work_logo/buzzly.png';
+import BMS from './assets/work_logo/BMS.png';
+import IMS from './assets/work_logo/IMS.png'
 import naturesbasket from './assets/work_logo/naturesbasket.png';
 
 //certificates section
@@ -332,6 +334,27 @@ export const experiences = [
       github: "https://www.figma.com/design/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
+    {
+      id: 7,
+      title: "Banking Management System",
+      description:
+        "Built a console‑based Mini Banking Application using Core Java, JDBC, and MySQL with account creation, secure login, deposits/withdrawals (with validation), transaction history, and safe account deletion.",
+      image: BMS,
+      tags: ["Java", "JDBC", "MySQL", "SQL"],
+      github: "https://github.com/vijaycb007/Projects/tree/main/Bank%20Management%20System/Bank_Management_System",
+      webapp: "https://github.com/vijaycb007/Projects/tree/main/Bank%20Management%20System/Bank_Management_System",
+    },
+     {
+      id: 8,
+      title: "Inventory Management System",
+      description:
+        "Built a full-stack Inventory Management System using Java and React to manage products, stock levels, and sales from a single, responsive dashboard with search and modal-based sell/restock flows. Implemented automatic low-stock alerts, total inventory value calculation, stock history logging, and auto-removal of products when stock reaches zero to mirror real-world inventory behaviour.",
+      image: IMS,
+      tags: ["Java", "JDBC", "PostgreSQL", "SQL", "React.js", "TailwindCSS"],
+      github: "https://github.com/vijaycb007/Projects/tree/main/Inventory%20Management%20System",
+      webapp: "https://github.com/vijaycb007/Projects/tree/main/Inventory%20Management%20System",
+    },
   ];
+
 
 
