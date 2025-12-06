@@ -8,9 +8,9 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 
 | Project Name | Description |
 |--------------|-------------|
-| [🎯 todo-app](./todo-app) | A simple and elegant To-Do list app with add/delete features, responsive UI, and local storage support. |
-| [🎬 imdb-clone](./imdb-clone) | A mini IMDb clone that fetches movie data using an API and displays trending content with search functionality. |
-| [🌦️ skycast](./skycast) | A modern weather app with live video backgrounds based on real-time weather conditions, animated splash screen, responsive UI, and smooth video transitions. Powered by OpenWeatherMap API with beautiful climate-based video effects. |
+| [🎯 todo-app] | A simple and elegant To-Do list app with add/delete features, responsive UI, and local storage support. |
+| [🎬 imdb-clone] | A mini IMDb clone that fetches movie data using an API and displays trending content with search functionality. |
+| [🌦️ skycast] | A modern weather app with live video backgrounds based on real-time weather conditions, animated splash screen, responsive UI, and smooth video transitions. Powered by OpenWeatherMap API with beautiful climate-based video effects. |
 | [💼 My-portfolio] | A responsive, modern developer portfolio built with React, Vite, and Tailwind CSS. Showcases my featured projects, skills, and contact information — all in a sleek single-page design.|
 
 ---
@@ -18,8 +18,8 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 ## 📁 Python Projects
 | Project Name | Description |
 |--------------|-------------|
-| [⏱️ egg-timer](./egg-timer) | A full-featured web-based timer app with customizable countdowns, sound alerts, and offline support via Progressive Web App (PWA) features. Built with Flask and enhanced using service workers.|
-| [👋Hands2Speech](./hands2speech) |**Hands2Speech** is a real-time sign language translator that converts hand signs into text and speech using computer vision and deep learning. It bridges the communication gap for the hearing-impaired through an intuitive, web-based interface.|
+| [⏱️ egg-timer] | A full-featured web-based timer app with customizable countdowns, sound alerts, and offline support via Progressive Web App (PWA) features. Built with Flask and enhanced using service workers.|
+| [👋Hands2Speech] |**Hands2Speech** is a real-time sign language translator that converts hand signs into text and speech using computer vision and deep learning. It bridges the communication gap for the hearing-impaired through an intuitive, web-based interface.|
 
 ---
 
@@ -27,6 +27,13 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 | Project Name | Description |
 |--------------|-------------|
 | [🏦 Bank Management System ] | Mini Banking Application – Core Java, JDBC, MySQL . Built a console-based banking system with account creation, login, balance inquiry, deposit/withdraw with validation, transaction history, and account deletion that also removes related transactions. Used DAO pattern with JDBC to connect Java and MySQL.|
+
+---
+
+## 📁 Java FullStack Project
+| Project Name | Description |
+|--------------|-------------|
+| [📦 Inventory Management System ] | Inventory Management Application – Core Java, JDBC, PostgreSQL , React.js , TailwindCSS. Inventory Management System built with a Java backend and React frontend to manage products, stock levels, sales, and total inventory value in a single dashboard, with search and popup-based sell/restock flows.Supports adding products, automatic low‑stock alerts, detailed stock history, and automatic removal of products when stock reaches zero for a clean, real‑world UX.|
 
 ---
 
@@ -44,6 +51,7 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 - 🎨 **Bootstrap 5** for selected UIs
 - 💻 **Java**
 - 📈 **SQL**
+- 🐘 **PostgreSQL**
 ---
  ##For Hands2Speech
 
