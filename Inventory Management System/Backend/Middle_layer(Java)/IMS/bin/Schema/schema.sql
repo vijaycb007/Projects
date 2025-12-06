@@ -1,0 +1,20 @@
+CREATE TABLE products (
+id SERIAL PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+category VARCHAR(100),
+price DECIMAL(10,2),
+quantity INTEGER DEFAULT 0,
+created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE stock_log (
+id SERIAL PRIMARY KEY,
+product_id INTEGER REFERENCES products(id),
+type VARCHAR(10) CHECK (type IN ('ADD', 'SALE')),
+quantity_changed INTEGER,
+log_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+SELECT *FROM products;
+
+SELECT *FROM stock_log;
