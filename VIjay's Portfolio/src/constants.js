@@ -20,6 +20,8 @@ import msofficeLogo from './assets/tech_logo/msoffice.png';
 import adobexdLogo from './assets/tech_logo/adobexd.png';
 import sqlLogo from './assets/tech_logo/Sql.jpeg';
 import javaLogo from './assets/tech_logo/java_logo.jpg';
+import postgreSQLLogo from './assets/tech_logo/Postgresql_logo.svg';
+import MySQLLogo from './assets/tech_logo/MySQL_logo.png';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
@@ -67,6 +69,8 @@ export const SkillsInfo = [
       { name: 'Flask', logo: flaskLogo },
       { name: 'PHP', logo: phpLogo },
       { name: 'SQL', logo: sqlLogo },
+      { name: 'MySQL', logo: MySQLLogo },
+      { name: 'PostgreSQL', logo: postgreSQLLogo }
     ],
   },
   {
@@ -355,6 +359,7 @@ export const experiences = [
       webapp: "https://github.com/vijaycb007/Projects/tree/main/Inventory%20Management%20System",
     },
   ];
+
 
 
 
