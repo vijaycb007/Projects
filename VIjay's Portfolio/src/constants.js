@@ -319,7 +319,7 @@ export const experiences = [
       webapp: "https://imdb-clone-two-bay.vercel.app/",
     },
     {
-      id: 5,
+      id: 7,
       title: "Nature's Basket",
       description:
         "a Figma-based UI/UX for an organic grocery shopping platform focused on user-centric navigation, minimalist aesthetics, smart cart features, and intuitive profile management, delivering a seamless and engaging shopping experience.",
@@ -329,7 +329,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/tB2jos2BG7kaMsk2N8t1OK/nature-s-basket?node-id=0-1&t=q2iat1riLasTSB0B-1"
     },
     {
-      id: 6,
+      id: 8,
       title: "Buzzly",
       description:
         "Designed Buzzly, a modern mobile app combining news, blogs, and personalized content. Focused on clean UI, intuitive onboarding, blog creation, and smooth content management for an enhanced reading experience.",
@@ -339,7 +339,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
     {
-      id: 7,
+      id: 5,
       title: "Banking Management System",
       description:
         "Built a console‑based Mini Banking Application using Core Java, JDBC, and MySQL with account creation, secure login, deposits/withdrawals (with validation), transaction history, and safe account deletion.",
@@ -349,7 +349,7 @@ export const experiences = [
       webapp: "https://github.com/vijaycb007/Projects/tree/main/Bank%20Management%20System/Bank_Management_System",
     },
      {
-      id: 8,
+      id: 6,
       title: "Inventory Management System",
       description:
         "Built a full-stack Inventory Management System using Java and React to manage products, stock levels, and sales from a single, responsive dashboard with search and modal-based sell/restock flows. Implemented automatic low-stock alerts, total inventory value calculation, stock history logging, and auto-removal of products when stock reaches zero to mirror real-world inventory behaviour.",
@@ -359,6 +359,7 @@ export const experiences = [
       webapp: "https://github.com/vijaycb007/Projects/tree/main/Inventory%20Management%20System",
     },
   ];
+
 
 
 
