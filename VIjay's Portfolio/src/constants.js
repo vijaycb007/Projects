@@ -319,26 +319,6 @@ export const experiences = [
       webapp: "https://imdb-clone-two-bay.vercel.app/",
     },
     {
-      id: 7,
-      title: "Nature's Basket",
-      description:
-        "a Figma-based UI/UX for an organic grocery shopping platform focused on user-centric navigation, minimalist aesthetics, smart cart features, and intuitive profile management, delivering a seamless and engaging shopping experience.",
-      image: naturesbasket,
-      tags: ["Figma", "UI/UX Design", "Prototyping", "Wireframing","User Research"],
-      github: "https://www.figma.com/design/tB2jos2BG7kaMsk2N8t1OK/nature-s-basket?node-id=0-1&t=q2iat1riLasTSB0B-1",
-      webapp: "https://www.figma.com/proto/tB2jos2BG7kaMsk2N8t1OK/nature-s-basket?node-id=0-1&t=q2iat1riLasTSB0B-1"
-    },
-    {
-      id: 8,
-      title: "Buzzly",
-      description:
-        "Designed Buzzly, a modern mobile app combining news, blogs, and personalized content. Focused on clean UI, intuitive onboarding, blog creation, and smooth content management for an enhanced reading experience.",
-      image: buzzly,
-      tags: ["Figma", "UI/UX Design", "Prototyping", "Wireframing", "User Research"],
-      github: "https://www.figma.com/design/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
-      webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
-    },
-    {
       id: 5,
       title: "Banking Management System",
       description:
@@ -358,7 +338,28 @@ export const experiences = [
       github: "https://github.com/vijaycb007/Projects/tree/main/Inventory%20Management%20System",
       webapp: "https://github.com/vijaycb007/Projects/tree/main/Inventory%20Management%20System",
     },
+    {
+      id: 7,
+      title: "Nature's Basket",
+      description:
+        "a Figma-based UI/UX for an organic grocery shopping platform focused on user-centric navigation, minimalist aesthetics, smart cart features, and intuitive profile management, delivering a seamless and engaging shopping experience.",
+      image: naturesbasket,
+      tags: ["Figma", "UI/UX Design", "Prototyping", "Wireframing","User Research"],
+      github: "https://www.figma.com/design/tB2jos2BG7kaMsk2N8t1OK/nature-s-basket?node-id=0-1&t=q2iat1riLasTSB0B-1",
+      webapp: "https://www.figma.com/proto/tB2jos2BG7kaMsk2N8t1OK/nature-s-basket?node-id=0-1&t=q2iat1riLasTSB0B-1"
+    },
+    {
+      id: 8,
+      title: "Buzzly",
+      description:
+        "Designed Buzzly, a modern mobile app combining news, blogs, and personalized content. Focused on clean UI, intuitive onboarding, blog creation, and smooth content management for an enhanced reading experience.",
+      image: buzzly,
+      tags: ["Figma", "UI/UX Design", "Prototyping", "Wireframing", "User Research"],
+      github: "https://www.figma.com/design/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
+      webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
+    },
   ];
+
 
 
 
