@@ -67,8 +67,9 @@ const About = () => {
             etc. Excited to contribute, collaborate, and grow in the dynamic
             world of web development.
           </p>
+          {/* Resume Link */}
           <a
-            href="https://drive.google.com/file/d/1LdIqrKLVZr1wormRQvhoe9Yw4eIyTYyQ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1vGs3Fxkc4SYFGVM1LKrrdyNi_7ZLMJHD/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
@@ -115,4 +116,5 @@ const About = () => {
 };
 
 export default About;
+
 
