@@ -18,7 +18,8 @@ public class InventoryHttpServer {
 	public static void main(String[] args) throws Exception {
 	    InventoryDAO dao = new InventoryDAO();
 
-	    HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+	    int port = Integer.parseInt(System.getenv().getOrDefault("PORT", "8080"));
+        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
 
 	    // GET /api/products
 	    server.createContext("/api/products", exchange -> {
@@ -430,3 +431,4 @@ public class InventoryHttpServer {
         return sb.toString().trim();
     }
 }
+
