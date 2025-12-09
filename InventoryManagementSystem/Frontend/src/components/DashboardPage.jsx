@@ -6,6 +6,8 @@ import RestockProduct from "./RestockProduct";
 
 const TABS = ["products", "lowStock", "history"];
 
+const API_BASE = "https://inventorymanagementsystem-b7mc.onrender.com/api";
+
 function DashboardPage({ user, onLogout }) {
   const [activeTab, setActiveTab] = useState("products");
 
@@ -46,7 +48,7 @@ function DashboardPage({ user, onLogout }) {
     try {
       setLoading(true);
       setError("");
-      const res = await fetch("http://localhost:8080/api/products");
+      const res = await fetch(`${API_BASE}/products`);
       if (!res.ok) throw new Error("Failed to load products");
       const data = await res.json();
       setProducts(data);
@@ -60,8 +62,8 @@ function DashboardPage({ user, onLogout }) {
   async function loadLowStock() {
     try {
       const res = await fetch(
-        "http://localhost:8080/api/products/low-stock?threshold=2"
-      );
+  `${API_BASE}/products/low-stock?threshold=2`
+    );
       if (!res.ok) return;
       const data = await res.json();
       setLowStockProducts(data);
@@ -72,7 +74,7 @@ function DashboardPage({ user, onLogout }) {
 
   async function loadHistory() {
     try {
-      const res = await fetch("http://localhost:8080/api/stock-history");
+      const res = await fetch(`${API_BASE}/stock-history`);
       if (!res.ok) return;
       const data = await res.json();
       setHistory(data);
@@ -85,7 +87,7 @@ function DashboardPage({ user, onLogout }) {
     e.preventDefault();
     try {
       setError("");
-      const res = await fetch("http://localhost:8080/api/products/add", {
+      const res = await fetch(`${API_BASE}/products/add`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -113,7 +115,7 @@ function DashboardPage({ user, onLogout }) {
         return;
       }
 
-      const url = `http://localhost:8080/api/products/search?keyword=${encodeURIComponent(
+      const url = `${API_BASE}/products/search?keyword=${encodeURIComponent(
         searchKeyword.trim()
       )}`;
 
@@ -133,9 +135,9 @@ function DashboardPage({ user, onLogout }) {
     try {
       setError("");
       const res = await fetch(
-        `http://localhost:8080/api/products/delete?id=${id}`,
-        { method: "DELETE" }
-      );
+      `${API_BASE}/products/delete?id=${id}`,
+      { method: "DELETE" }
+    );
       if (!res.ok) throw new Error("Failed to delete product");
       await loadProducts();
       await loadLowStock();
@@ -148,7 +150,7 @@ function DashboardPage({ user, onLogout }) {
 async function handleRestockProduct(productId, qty) {
   try {
     setError("");
-    const res = await fetch("http://localhost:8080/api/products/restock", {
+    const res = await fetch(`${API_BASE}/products/restock`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: productId, quantity: qty }),
@@ -182,7 +184,7 @@ async function handleRestockProduct(productId, qty) {
   async function handleSellProduct(productId, qty) {
   try {
     setError("");
-    const res = await fetch("http://localhost:8080/api/products/sell", {
+    const res = await fetch(`${API_BASE}/products/sell`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: productId, quantity: qty }),
