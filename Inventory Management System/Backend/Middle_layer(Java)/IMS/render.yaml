@@ -3,9 +3,8 @@ services:
     name: inventory-backend
     env: docker
     plan: free
-    region: oregon
     branch: main
-    dockerfilePath: Dockerfile
+    dockerfilePath: Backend/Middle_layer(Java)/IMS/Dockerfile
     envVars:
       - key: DB_URL
         sync: false
