@@ -5,8 +5,8 @@ services:
     plan: free
     branch: main
 
-    # Path to Dockerfile from repo root (Projects/)
-    dockerfilePath: Inventory Management System/Backend/Middle_layer(Java)/IMS/Dockerfile
+    # Path from repo root to your Dockerfile
+    rootDir: InventoryManagementSystem/Backend/MiddleLayer/IMS
 
     envVars:
       - key: DB_URL
