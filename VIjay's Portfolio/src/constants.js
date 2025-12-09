@@ -236,7 +236,8 @@ export const experiences = [
       desc: "Joined as a trainee in Jspiders as a Java FullStack developer.",
       skills: [
         "SQL",
-        "Java"
+        "Java",
+        "HTML"
       ],
     link: "",
     },
@@ -363,6 +364,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
