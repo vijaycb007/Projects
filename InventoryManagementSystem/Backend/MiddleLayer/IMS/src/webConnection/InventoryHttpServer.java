@@ -127,7 +127,6 @@ public class InventoryHttpServer {
     private static void handleGetProducts(HttpExchange exchange, InventoryDAO dao) throws IOException {
         try {
             List<product> products = dao.getAllProducts();
-			System.out.println("GET /api/products size=" + products.size());
             // Simple manual JSON (you can replace with any JSON library)
             StringBuilder json = new StringBuilder("[");
             for (int i = 0; i < products.size(); i++) {
