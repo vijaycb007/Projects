@@ -341,7 +341,7 @@ export const experiences = [
       image: IMS,
       tags: ["Java", "JDBC", "PostgreSQL", "SQL", "React.js", "TailwindCSS"],
       github: "https://github.com/vijaycb007/Projects/tree/main/Inventory%20Management%20System",
-      webapp: "https://github.com/vijaycb007/Projects/tree/main/Inventory%20Management%20System",
+      webapp: "https://inventorymanagementsystem-puce.vercel.app/",
     },
     {
       id: 7,
@@ -364,6 +364,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
