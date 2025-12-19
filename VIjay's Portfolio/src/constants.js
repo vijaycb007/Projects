@@ -237,7 +237,8 @@ export const experiences = [
       skills: [
         "SQL",
         "Java",
-        "HTML"
+        "HTML",
+        "CSS"
       ],
     link: "",
     },
@@ -364,6 +365,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
