@@ -210,12 +210,13 @@ export const experiences = [
       role: "UI/UX Designer Intern",
       company: "RABLO.IN",
       date: "November 2024 - March 2025",
-      desc: "worked as an UI/UX designer TL & intern on a Tutor-Student project on Rablo. Creating wireframes and maintaining the documents of the project. Collaborating with other team members for producing an effective contribution to the team and the organization.",
+      desc: "worked as an UI/UX designer TL & intern on a Tutor-Student project on Rablo. Created wireframes and maintained the documents of the project. Collaborated with other team members and other departments for producing an effective contribution to the team and the organization.",
       skills: [
         "Figma",
         "Prototyping",
         "Wireframing",
         "Jira",
+        "Miro",
         "User Research",
         "User Testing",
         "Agile Methodology",
@@ -365,6 +366,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
