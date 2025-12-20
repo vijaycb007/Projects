@@ -56,7 +56,7 @@ const About = () => {
             />
           </h3>
           <p
-            className={`text-base sm:text-lg md:text-lg mb-10 mt-8 leading-relaxed ${
+            className={`text-base sm:text-lg md:text-lg mb-10 mt-8 leading-relaxed text-justify ${
               isLight ? "text-[#4b5563]" : "text-gray-400"
             }`}
           >
@@ -115,6 +115,7 @@ const About = () => {
 };
 
 export default About;
+
 
 
 
