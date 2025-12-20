@@ -43,7 +43,7 @@ const About = () => {
             <Typewriter
               words={[
                 "Frontend Developer",
-                "Web Developer",
+                "Java Developer",
                 "UI/UX Designer",
                 "SQL Developer",
               ]}
@@ -60,12 +60,11 @@ const About = () => {
               isLight ? "text-[#4b5563]" : "text-gray-400"
             }`}
           >
-            I'm an aspiring web developer with a strong interest in frontend
-            development, UI/UX design, and modern web technologies. I’m
-            continuously learning and building projects to sharpen my skills in
-            HTML, CSS, JavaScript, React, and design tools like Figma, Vite
-            etc. Excited to contribute, collaborate, and grow in the dynamic
-            world of web development.
+            I am an aspiring Java Full Stack Developer with hands-on experience 
+            in frontend technologies like HTML, CSS, JavaScript, React, and 
+            Tailwind CSS, along with backend development using Java, SQL, and 
+            databases such as MySQL and PostgreSQL. I enjoy building end-to-end web 
+            applications and continuously improving my backend and system-design skills.
           </p>
           {/* Resume Link */}
           <a
@@ -116,5 +115,6 @@ const About = () => {
 };
 
 export default About;
+
 
 
