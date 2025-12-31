@@ -16,14 +16,12 @@ import netlifyLogo from './assets/tech_logo/netlify.png';
 import rLogo from './assets/tech_logo/r.png';
 import jiraLogo from './assets/tech_logo/jira.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
-import msofficeLogo from './assets/tech_logo/msoffice.png';
 import adobexdLogo from './assets/tech_logo/adobexd.png';
 import sqlLogo from './assets/tech_logo/Sql.jpeg';
 import javaLogo from './assets/tech_logo/java_logo.jpg';
 import postgreSQLLogo from './assets/tech_logo/Postgresql_logo.svg';
 import MySQLLogo from './assets/tech_logo/MySQL_logo.png';
 import EclipseLogo from './assets/tech_logo/eclipse_logo.png';
-import EditplusLogo from './assets/tech_logo/editplus_logo.png';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
@@ -94,10 +92,8 @@ export const SkillsInfo = [
       { name: 'Figma', logo: figmaLogo },
       { name: 'Jira', logo: jiraLogo },
       { name: 'Vercel', logo: vercelLogo },
-      { name: 'MS Office', logo: msofficeLogo },
       { name: 'Adobe XD', logo: adobexdLogo },
       { name: 'Eclipse IDE', logo: EclipseLogo },
-      { name: 'EditPlus', logo: EditplusLogo },
     ],
   },
 ];
@@ -366,6 +362,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
