@@ -26,10 +26,10 @@ const App = () => {
       <div className="relative pt-20">
         <Navbar />
         <About />
+        <Education theme={theme}/>
         <Skills />
         <Experience />
         <Work theme={theme}/>
-        <Education theme={theme}/>
         <Certificates />
         <Contact />
         <Footer />
