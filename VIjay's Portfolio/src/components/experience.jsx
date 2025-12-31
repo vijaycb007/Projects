@@ -13,11 +13,11 @@ const Experience = () => {
     >
       <div className="text-center mb-16">
         <h2 className={`text-4xl font-bold ${isDark ? "text-white" : "text-gray-900"}`}>
-          EXPERIENCE
+          Internships
         </h2>
         <div className={`w-32 h-1 mx-auto mt-4 ${isDark ? "bg-purple-500" : "bg-[#ff6600]"}`}></div>
         <p className={`mt-4 text-lg ${isDark ? "text-gray-400 font-semibold" : "text-gray-600 font-medium"}`}>
-         Internship & Work Experience Across Roles and Organizations.
+         Internship Experience Across Roles and Organizations.
         </p>
       </div>
 
@@ -105,3 +105,4 @@ const Experience = () => {
 };
 
 export default Experience;
+
