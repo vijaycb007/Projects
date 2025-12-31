@@ -28,26 +28,6 @@ const Footer = () => {
           VIJAY C B
         </h2>
 
-        {/* Navigation Links */}
-        <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
-          {[
-            { name: "About", id: "about" },
-            { name: "Skills", id: "skills" },
-            { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" },
-            { name: "Education", id: "education" },
-            { name: "Certificates", id: "certificates" },
-          ].map((item, index) => (
-            <button
-              key={index}
-              onClick={() => handleScroll(item.id)}
-              className={`text-sm sm:text-base my-1 ${navColor}`}
-            >
-              {item.name}
-            </button>
-          ))}
-        </nav>
-
         {/* Social Icons */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
@@ -86,3 +66,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
