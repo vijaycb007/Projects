@@ -28,6 +28,12 @@ const Footer = () => {
           VIJAY C B
         </h2>
 
+        <div className="container mx-auto text-center">
+        {/* Name / Logo */}
+        <h3 className={`text-xl font-semibold ${isDark ? "text-purple-500" : "text-orange-500"}`}>
+          Thank you for visiting my portfolio.
+        </h3>
+
         {/* Social Icons */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
@@ -66,4 +72,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
 
