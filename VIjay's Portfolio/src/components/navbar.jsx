@@ -30,10 +30,10 @@ const Navbar = () => {
 
   const menuItems = [
     { id: "about", label: "About" },
+    { id: "education", label: "Education" },
     { id: "skills", label: "Skills" },
     { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
-    { id: "education", label: "Education" },
     { id: "certificates", label: "Certificates" },
   ];
 
@@ -191,3 +191,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
