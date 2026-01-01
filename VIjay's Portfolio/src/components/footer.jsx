@@ -1,20 +1,14 @@
 import React, { useContext } from "react";
 import { FaWhatsapp, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { ThemeContext } from "../ThemeContext"; // ✅ Import context
+import { ThemeContext } from "../ThemeContext";
 
 const Footer = () => {
-  const { theme } = useContext(ThemeContext); // ✅ Access context
+  const { theme } = useContext(ThemeContext);
   const isDark = theme === "dark";
 
-  const handleScroll = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const navColor = isDark ? "hover:text-purple-500 text-white" : "hover:text-orange-500 text-gray-600";
-  const iconColor = isDark ? "hover:text-purple-500 text-white" : "hover:text-orange-500 text-gray-600";
+  const iconColor = isDark
+    ? "hover:text-purple-500 text-white"
+    : "hover:text-orange-500 text-gray-600";
 
   return (
     <footer
@@ -23,19 +17,26 @@ const Footer = () => {
       }`}
     >
       <div className="container mx-auto text-center">
-        {/* Name / Logo */}
-        <h2 className={`text-xl font-semibold ${isDark ? "text-purple-500" : "text-orange-500"}`}>
+        {/* Name */}
+        <h2
+          className={`text-xl font-semibold ${
+            isDark ? "text-purple-500" : "text-orange-500"
+          }`}
+        >
           VIJAY C B
         </h2>
 
-        <div className="container mx-auto text-center">
-        {/* Name / Logo */}
-        <h3 className={`text-xl font-semibold ${isDark ? "text-purple-500" : "text-orange-500"}`}>
+        {/* Subtitle */}
+        <h3
+          className={`text-lg mt-2 ${
+            isDark ? "text-purple-400" : "text-orange-400"
+          }`}
+        >
           Thank you for visiting my portfolio.
         </h3>
 
         {/* Social Icons */}
-        <div className="flex flex-wrap justify-center space-x-4 mt-6">
+        <div className="flex justify-center space-x-4 mt-6">
           {[
             {
               icon: <FaLinkedin />,
@@ -63,7 +64,11 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <p className={`text-sm mt-6 ${isDark ? "text-gray-400" : "text-gray-600"}`}>
+        <p
+          className={`text-sm mt-6 ${
+            isDark ? "text-gray-400" : "text-gray-600"
+          }`}
+        >
           © 2025 Vijay C B. All rights reserved.
         </p>
       </div>
@@ -72,5 +77,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
