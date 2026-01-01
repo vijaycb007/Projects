@@ -75,9 +75,6 @@ const Education = ({ theme }) => {
               <p className={`mt-4 font-bold ${isDark ? "text-gray-400" : "text-gray-700"}`}>
                 Grade: {edu.grade}
               </p>
-              <p className={`mt-4 ${isDark ? "text-gray-400" : "text-gray-600"}`}>
-                {edu.desc}
-              </p>
             </div>
           </div>
         ))}
@@ -87,3 +84,4 @@ const Education = ({ theme }) => {
 };
 
 export default Education;
+
