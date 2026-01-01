@@ -92,7 +92,7 @@ const Navbar = () => {
         {/* Icons + Toggle */}
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href="https://github.com/vijaycb007/Projects.git"
+            href="https://github.com/vijaycb007"
             target="_blank"
             rel="noopener noreferrer"
             className={`hover:text-${
@@ -191,4 +191,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
