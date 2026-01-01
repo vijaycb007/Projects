@@ -248,7 +248,6 @@ export const experiences = [
       school: "Seshadripuram Degree College, Mysuru",
       date: "Sept 2022 - June 2025",
       grade: "9.2 CGPA",
-      desc: "I completed my BCA from Seshadripuram Degree College, Mysuru, where I built a strong foundation in programming, software development, and computer science. My coursework included Data Structures, OOP, DBMS, Web Development, and Software Engineering, shaping both my technical skills and professional growth.",
       degree: "Bachelor of Computer Applications - BCA",
     },
     {
@@ -257,7 +256,6 @@ export const experiences = [
       school: "Vivekananda Composite PU College, Mysuru",
       date: "August 2020 - April 2022",
       grade: "91%",
-      desc: "I completed my PUC (class 12) from Vivekananda Composite PU College, Mysuru. Throughout my studies, I was immersed in a variety of subjects that deepened my understanding of commerce and technology. From exploring Programming and Accountancy to diving into Web Development and Balance sheets. My time at Vivekananda Composite PU College allowed me to gain knowledge about the intersection of commerce and technology.",
       degree: "PUC in Commerce (EBACs Branch)",
     },
     {
@@ -266,7 +264,6 @@ export const experiences = [
       school: "Sri Vidya Convent, Mysuru",
       date: "Apr 2011 - March 2020",
       grade: "87%",
-      desc: "I completed my class 10 education from Sri Vidya Convent, Mysuru, under the State board, where I studied all the subjects including Maths, Social Science, and Science with some languages.",
       degree: "Karnataka State Board (Class 1 - Class 10)",
     },
   ];
@@ -362,6 +359,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
