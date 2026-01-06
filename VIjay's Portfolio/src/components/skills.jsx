@@ -37,12 +37,18 @@ const Skills = () => {
         </p>
       </div>
 
-      {/* ✅ CHANGED HERE (flex → grid) */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 py-10 place-items-center">
-        {SkillsInfo.map((category) => (
+      {/* GRID */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 py-10">
+        {SkillsInfo.map((category, index) => (
           <div
             key={category.title}
-            className={`backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[95%] rounded-2xl border shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 ease-in-out ${
+            className={`backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[95%] rounded-2xl border shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 ease-in-out
+            ${
+              index === SkillsInfo.length - 1
+                ? "sm:col-span-2 sm:justify-self-center"
+                : ""
+            }
+            ${
               isDark
                 ? "bg-gray-900 border-white shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
                 : "bg-white border-orange-300 shadow-[0_0_20px_1px_rgba(255,169,77,0.25)]"
