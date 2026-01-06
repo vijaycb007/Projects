@@ -1,4 +1,3 @@
-//skills.jsx
 import React, { useContext } from "react";
 import { SkillsInfo } from "../constants";
 import Tilt from "react-parallax-tilt";
@@ -11,7 +10,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className={`py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom`}
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
     >
       <div className="text-center mb-8">
         <h2
@@ -21,11 +20,13 @@ const Skills = () => {
         >
           SKILLS
         </h2>
+
         <div
           className={`w-24 h-1 mx-auto mt-2 ${
             isDark ? "bg-[#8245ec]" : "bg-orange-400"
           }`}
         ></div>
+
         <p
           className={`mt-4 text-lg font-semibold ${
             isDark ? "text-gray-400" : "text-gray-700"
@@ -36,11 +37,12 @@ const Skills = () => {
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
+      {/* ✅ CHANGED HERE (flex → grid) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 py-10 place-items-center">
         {SkillsInfo.map((category) => (
           <div
             key={category.title}
-            className={`backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[48%] rounded-2xl border shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 ease-in-out ${
+            className={`backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[95%] rounded-2xl border shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 ease-in-out ${
               isDark
                 ? "bg-gray-900 border-white shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
                 : "bg-white border-orange-300 shadow-[0_0_20px_1px_rgba(255,169,77,0.25)]"
@@ -55,7 +57,6 @@ const Skills = () => {
             </h3>
 
             <Tilt
-              key={category.title}
               tiltMaxAngleX={20}
               tiltMaxAngleY={20}
               perspective={1000}
