@@ -61,7 +61,6 @@ export const SkillsInfo = [
     title: 'Backend',
     skills: [
       { name: 'Java', logo: javaLogo },
-      { name: 'PHP', logo: phpLogo },
       { name: 'SQL', logo: sqlLogo },
       { name: 'MySQL', logo: MySQLLogo },
       { name: 'PostgreSQL', logo: postgreSQLLogo }
@@ -344,6 +343,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
