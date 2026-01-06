@@ -45,7 +45,7 @@ const Skills = () => {
             className={`backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[95%] rounded-2xl border shadow-md hover:shadow-xl hover:scale-[1.02] transition-transform duration-300 ease-in-out
             ${
               index === SkillsInfo.length - 1
-                ? "sm:col-span-2 sm:justify-self-center"
+                ? "sm:col-span-2 sm:justify-self-center sm:max-w-[48%]"
                 : ""
             }
             ${
@@ -98,3 +98,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
