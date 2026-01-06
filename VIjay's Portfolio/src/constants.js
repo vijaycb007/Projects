@@ -4,16 +4,10 @@ import cssLogo from './assets/tech_logo/css.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
 import reactjsLogo from './assets/tech_logo/reactjs.png';
 import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
-import pythonLogo from './assets/tech_logo/python.png';
-import phpLogo from './assets/tech_logo/phplogo.png';
-import flaskLogo from './assets/tech_logo/flask.png';
 import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import figmaLogo from './assets/tech_logo/figma.png';
-import cLogo from './assets/tech_logo/c.png';
-import cppLogo from './assets/tech_logo/cpp.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
-import rLogo from './assets/tech_logo/r.png';
 import jiraLogo from './assets/tech_logo/jira.png';
 import vercelLogo from './assets/tech_logo/vercel.png';
 import adobexdLogo from './assets/tech_logo/adobexd.png';
@@ -66,21 +60,11 @@ export const SkillsInfo = [
   {
     title: 'Backend',
     skills: [
-      { name: 'Flask', logo: flaskLogo },
+      { name: 'Java', logo: javaLogo },
       { name: 'PHP', logo: phpLogo },
       { name: 'SQL', logo: sqlLogo },
       { name: 'MySQL', logo: MySQLLogo },
       { name: 'PostgreSQL', logo: postgreSQLLogo }
-    ],
-  },
-  {
-    title: 'Languages',
-    skills: [
-      { name: 'Python', logo: pythonLogo },
-      { name: 'Java', logo: javaLogo },
-      { name: 'C', logo: cLogo },
-      { name: 'C++', logo: cppLogo },
-      { name: 'R Programming', logo: rLogo },
     ],
   },
   {
@@ -360,6 +344,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
