@@ -18,7 +18,7 @@ import MySQLLogo from './assets/tech_logo/MySQL_logo.png';
 import EclipseLogo from './assets/tech_logo/eclipse_logo.png';
 import turboCLogo from './assets/tech_logo/turboC.png';
 import PythonLogo from './assets/tech_logo/python.png';
-import renderLogo from './assets/tech_logo/renderLogo.png';
+import renderLogo from './assets/tech_logo/renderLogo.svg';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
@@ -349,6 +349,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
