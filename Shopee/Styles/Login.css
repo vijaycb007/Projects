@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    box-sizing: border-box;
+}
+/* Center the form */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+}
+/* Outer form container */
+#formContainer{
+    height: 400px;
+    width: 520px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#formContainer:hover{
+    transform: translateY(2,1);
+    box-shadow: 0px 15px 20px grey;
+}
+#formContainer h1{
+    text-align: center;
+    font-size: 45px;
+    color: magenta;
+}
+#formContainer h2{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+#formContainer table{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#formContainer a{
+    text-decoration: none;
+}
+#formContainer table label{
+    font-size: 25px;
+}
+#formContainer table input{
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(162, 162, 162);
+}
+#formContainer a{
+    text-align: center;
+    font-size: 23px;
+}
+#formContainer a:visited{
+    color: blueviolet;
+}
+#formContainer a:hover{
+    color: orange;
+}
+#formContainer button{
+        height: 50px;
+        width: 130px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient(to right, #fdc830, #f37335);
+        color: white;
+}
+#formContainer #btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}

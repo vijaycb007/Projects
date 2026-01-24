@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    scroll-behavior: smooth;
+}
+/* Nav Bar */
+nav{
+    padding: 0px ,30px;
+    height: 90px;
+    width: 100%;
+    background-image: url("../bg2.jpg");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav #logo{
+    height: 70px;
+    width: fit-content;
+    font-size: 40px;
+    font: 600;
+    flex-basis: 15%;
+    color: white;
+    text-align: center;
+}
+nav ol{
+    height: 70px;
+    width: 700px;
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 40%;
+    font-weight: 500 ;
+}
+nav input{
+    height: 40px;
+    width: 300px;
+    font-size: 15px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 10px;
+    flex-basis: 15%;
+}
+nav a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+nav h3{
+    flex-basis: 8%;
+    font-size: 20px;
+    color: white;
+}
+nav #username{
+    height: 80px;
+    width: 200px;
+    padding-right: 40px;
+    width: fit-content;
+    flex-basis: 7%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Main Container */
+#mainContainer{
+    height: 80vh;
+    width: 95.5%;
+    margin: 40px;
+    /* background: linear-gradient(to right, #8360c3, #2ebf91); */
+    background-image: url("../bg2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    color: white;
+}
+#mainContainer h1{
+    font-size: 60px;
+}
+#mainContainer p{
+    font-size: 30px;
+}
+#mainContainer button{
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(to right, #fdc830, #f37335);
+    color: white;
+}
+#mainContainer button a{
+    text-decoration: none;
+    color: white;
+}
+/* Products Container */
+#productList{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.productsCard{
+    height: 450px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.productsCard:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 10px 15px grey;
+}
+.productsCard h4{
+    color: green;
+    font-size: 25px;
+}
+.productsCard p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.productsCard button{
+    height: 50px;
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    background: linear-gradient(to right, #fdc830, #f37335);
+    color: white;
+}
+.productsCard button:hover{
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+/* Footer container*/
+footer{
+    margin-top: 30px;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+}
+footer #main{
+    padding-top: 30px;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    color: white;
+    /* background: linear-gradient(to top, #bdc3c7, #2c3e50);  */
+    background-image: url("../bg2.jpg");
+}
+footer #copyRights{
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+footer #about{
+    width: 400px;
+}
+footer #categories ul{
+    list-style: none;
+}
+footer #information ul{
+    list-style: none;
+}
+#main #about #icons{
+    font-size: 30px;
+}
+#main #contact #icons{
+    font-size: 30px;
+}

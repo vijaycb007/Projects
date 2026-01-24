@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: linear-gradient(#005aa7);
+}
+#mainContainer {
+  height: 100vh;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 250px;
+  background-image: url("../Registerbg.png");
+}
+#mainContainer h1 {
+  font-size: 60px;
+  color: white;
+}
+#mainContainer h2 {
+  font-size: 50px;
+  color: white;
+}
+#mainContainer #heading {
+  width: 1000px;
+  height: 200px;
+  font-size: 50px;
+  color: white;
+}
+#mainContainer #content {
+  height: 500px;
+  width: 1000px;
+  font-size: 30px;
+  text-align: justify;
+  color: white;
+}
+#forms {
+  height: 100vh;
+  width: 35%;
+  padding: 30px 40px;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  font-family: "Edu NSW ACT Cursive", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#forms table {
+  height: 400px;
+  width: 75%;
+  text-align: center;
+}
+#forms table label {
+  font-size: 20px;
+}
+#forms table input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+input[type="number"] {
+  width: 250px;
+  height: 40px;
+  padding-left: 30px;
+  padding-right: 20px;
+  background: rgb(163, 162, 162);
+  border: none;
+  border-radius: 20px;
+}
+#forms table textarea {
+  width: 250px;
+  height: 40px;
+  padding-left: 30px;
+  background: rgb(163, 162, 162);
+  border: none;
+  border-radius: 20px;
+}
+#forms table input[type="radio"] {
+  height: 20px;
+  width: 20px;
+}
+#forms a{
+    font-size: 20px;
+}
+#forms a:link{
+    color: black;
+    text-decoration: none;
+}
+#forms a:visited{
+    color: blueviolet;
+}
+#forms a:hover{
+    color: orange;
+}
+#btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+button{
+    height: 60px;
+    width: 130px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: linear-gradient(to right, #fdc830, #f37335);
+}
