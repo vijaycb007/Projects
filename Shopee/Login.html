@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Styles/Login.css" />
+  </head>
+  <body>
+    <div id="formContainer">
+      <h1>Shopeee <i class="fa-solid fa-store"></i></h1>
+      <h2>Login / Signup</h2>
+      <table>
+        <tr>
+          <td><label for="email">Email : </label></td> 
+          <td><input type="text" placeholder="Enter mail id" id="email" name="email"></td>
+        </tr>
+        <tr>
+          <td><label for="pwd">Password : </label></td>
+          <td><input type="password" placeholder="Enter password" id="pwd" name="password"></td>
+        </tr>
+      </table>
+      <a href="./Register.html">Don't have an Account ?</a>
+      <div id="btns">
+        <button type="submit" id="login">Login</button>
+        <button>Cancel</button>
+      </div>
+    </div>
+  </body>
+  <script src="./Script/Login.js"></script>
+</html>

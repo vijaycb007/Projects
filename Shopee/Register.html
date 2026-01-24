@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Register</title>
+    <link rel="stylesheet" href="./Styles/Register.css" />
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="heading">
+        <h1>Welcome to the Website !</h1>
+        <h2>Shopeee <i class="fa-solid fa-store"></i></h2>
+      </div>
+      <div id="content">
+        <p>
+          Welcome to Shopeee, your trusted destination for high-quality products
+          curated for modern lifestyles. We offer a seamless, secure online
+          shopping experience with fast shipping to your doorstep. Browse our
+          diverse catalog today to find exactly what you need with confidence.
+        </p>
+      </div>
+    </div>
+    <div id="forms">
+      <h1>User Register</h1>
+      <table>
+        <tr>
+          <td><label for="un">Username : </label></td>
+          <td>
+            <input
+              type="text"
+              name="Username"
+              id="un"
+              placeholder="Enter Username"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email : </label></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your mail id"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="pwd">Password : </label></td>
+          <td>
+            <input
+              type="password"
+              name="Password"
+              id="pwd"
+              placeholder="Enter your Password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="phnum">Phone number : </label></td>
+          <td>
+            <input
+              type="tel"
+              name="Phone number"
+              id="phnum"
+              minlength="10"
+              maxlength="10"
+              placeholder="Enter Phone no."
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Address">Address : </label></td>
+          <td>
+            <textarea
+              name="Address"
+              id="Address"
+              placeholder="Enter Address"
+              rows="1"
+              cols="20"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Age">Age : </label></td>
+          <td>
+            <input
+              type="number"
+              name="Age"
+              id="Age"
+              minlength="1"
+              maxlength="2"
+              placeholder="Enter your age"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Gender">Gender : </label></td>
+          <td>
+            <div>
+              <input type="radio" name="Gender" id="Gender" value="Male" />Male
+              <input
+                type="radio"
+                name="Gender"
+                id="Gender"
+                value="Female"
+              />Female
+              <input
+                type="radio"
+                name="Gender"
+                id="Gender"
+                value="Others"
+              />Others
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="dob">Date of birth : </label></td>
+          <td><input type="date" name="DOB" id="dob" required /></td>
+        </tr>
+      </table>
+      <a href="./Login.html">Already have an Account?</a>
+      <div id="btns">
+        <button type="submit" id="register">Register</button>
+        <button type="reset">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="./Script/Register.js"></script>
+</html>
