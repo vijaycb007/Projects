@@ -333,7 +333,7 @@ export const experiences = [
       id: 7,
       title: "Shopeee E-Commerce website",
       description:
-        "Built and deployed a fully functional E-commerce Cart System using HTML, CSS, and JavaScript.",
+        "Built and deployed a fully functional E-commerce Shopping System using HTML, CSS, and JavaScript.",
       image: Shopeee,
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/vijaycb007/Projects/tree/main/Shopee",
@@ -360,6 +360,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
