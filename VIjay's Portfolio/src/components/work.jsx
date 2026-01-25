@@ -13,8 +13,8 @@ const Work = ({ theme }) => {
     setSelectedProject(null);
   };
 
-  const codingProjects = projects.slice(0, 7);
-  const figmaProjects = projects.slice(7);
+  const codingProjects = projects.slice(0, 8);
+  const figmaProjects = projects.slice(8);
 
   return (
     <section
@@ -216,4 +216,5 @@ const Work = ({ theme }) => {
 };
 
 export default Work;
+
 
