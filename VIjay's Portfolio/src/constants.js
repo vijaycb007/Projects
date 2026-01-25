@@ -37,7 +37,8 @@ import skycast from './assets/work_logo/skycast.png';
 import imdbclone from './assets/work_logo/imdbclone.png';
 import buzzly from './assets/work_logo/buzzly.png';
 import BMS from './assets/work_logo/BMS.png';
-import IMS from './assets/work_logo/IMS.png'
+import IMS from './assets/work_logo/IMS.png';
+import Shopeee from './assets/work_logo/Shopeee.png';
 import naturesbasket from './assets/work_logo/naturesbasket.png';
 
 //certificates section
@@ -330,6 +331,16 @@ export const experiences = [
     },
     {
       id: 7,
+      title: "Shopeee E-Commerce website",
+      description:
+        "Built and deployed a fully functional E-commerce Cart System using HTML, CSS, and JavaScript.",
+      image: Shopeee,
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/vijaycb007/Projects/tree/main/Shopee",
+      webapp: "https://shopeee-ecommerce.netlify.app/",
+    },
+    {
+      id: 8,
       title: "Nature's Basket",
       description:
         "a Figma-based UI/UX for an organic grocery shopping platform focused on user-centric navigation, minimalist aesthetics, smart cart features, and intuitive profile management, delivering a seamless and engaging shopping experience.",
@@ -339,7 +350,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/tB2jos2BG7kaMsk2N8t1OK/nature-s-basket?node-id=0-1&t=q2iat1riLasTSB0B-1"
     },
     {
-      id: 8,
+      id: 9,
       title: "Buzzly",
       description:
         "Designed Buzzly, a modern mobile app combining news, blogs, and personalized content. Focused on clean UI, intuitive onboarding, blog creation, and smooth content management for an enhanced reading experience.",
@@ -349,6 +360,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/5efPsg6vQmwjHiSs5fQBWQ/Buzzly?node-id=0-1&t=f6XlbP8uM6nBdZ8f-1",
     },
   ];
+
 
 
 
