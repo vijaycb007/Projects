@@ -1,6 +1,6 @@
 # 🚀 Projects Showcase
 
-Welcome to my collection of Projects! This repository includes a set of frontend apps built using modern JavaScript, React.js, and related tools. Each project is organized into its own folder and includes full source code, ready to run.
+Welcome to my collection of Projects! This repository includes a set of frontend and backend apps built using modern JavaScript, React.js, and related tools. Each project is organized into its own folder and includes full source code, ready to run.
 
 ---
 
