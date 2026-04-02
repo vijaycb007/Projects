@@ -228,7 +228,8 @@ export const experiences = [
         "CSS",
         "JavaScript",
         "JDBC", 
-        "Hibernate"
+        "Hibernate",
+        "Servlets and JSP's"
       ],
     link: "",
     },
