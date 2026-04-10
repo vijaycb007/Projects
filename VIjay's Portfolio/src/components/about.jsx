@@ -61,10 +61,10 @@ const About = () => {
             }`}
           >
             I am an aspiring Java Full Stack Developer with hands-on experience 
-            in frontend technologies like HTML, CSS, JavaScript, React, and 
-            Tailwind CSS, along with backend development using Java, SQL, and 
-            databases such as MySQL and PostgreSQL. I enjoy building end-to-end web 
-            applications and continuously improving my backend and system-design skills.
+            in frontend technologies like HTML, CSS, JavaScript, along with 
+            backend development using Java, SQL, and databases such as MySQL and 
+            PostgreSQL. I enjoy building end-to-end web applications and continuously 
+            improving my backend and system-design skills in Spring(Java).
           </p>
           {/* Resume Link */}
           <a
