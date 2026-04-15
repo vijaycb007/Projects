@@ -40,6 +40,7 @@ import BMS from './assets/work_logo/BMS.png';
 import IMS from './assets/work_logo/IMS.png';
 import Shopeee from './assets/work_logo/Shopeee.png';
 import naturesbasket from './assets/work_logo/naturesbasket.png';
+import lms from '.assets/work_logo/lms.png';
 
 //certificates section
 import adobe from './assets/certificates/adobe.jpeg';
@@ -229,7 +230,8 @@ export const experiences = [
         "JavaScript",
         "JDBC", 
         "Hibernate",
-        "Servlets and JSP's"
+        "Servlets and JSP's",
+        "Spring MVC"
       ],
     link: "",
     },
@@ -344,6 +346,16 @@ export const experiences = [
     },
     {
       id: 8,
+      title: "Library Management System",
+      description:
+        "A Spring MVC and PostgreSQL-based web app for managing books, students, and issue records efficiently through an organized MVC architecture.",
+      image: lms,
+      tags: ["Java", "Spring MVC", "HTML/CSS", "PostgreSQL"],
+      github: "https://github.com/vijaycb007/Projects/tree/main/Shopee",
+      webapp: "",
+    },
+    {
+      id: 9,
       title: "Nature's Basket",
       description:
         "a Figma-based UI/UX for an organic grocery shopping platform focused on user-centric navigation, minimalist aesthetics, smart cart features, and intuitive profile management, delivering a seamless and engaging shopping experience.",
@@ -353,7 +365,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/tB2jos2BG7kaMsk2N8t1OK/nature-s-basket?node-id=0-1&t=q2iat1riLasTSB0B-1"
     },
     {
-      id: 9,
+      id: 10,
       title: "Buzzly",
       description:
         "Designed Buzzly, a modern mobile app combining news, blogs, and personalized content. Focused on clean UI, intuitive onboarding, blog creation, and smooth content management for an enhanced reading experience.",
