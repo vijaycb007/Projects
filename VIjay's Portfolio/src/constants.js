@@ -40,7 +40,7 @@ import BMS from './assets/work_logo/BMS.png';
 import IMS from './assets/work_logo/IMS.png';
 import Shopeee from './assets/work_logo/Shopeee.png';
 import naturesbasket from './assets/work_logo/naturesbasket.png';
-import lms from '.assets/work_logo/lms.png';
+import lms from './assets/work_logo/lms.png';
 
 //certificates section
 import adobe from './assets/certificates/adobe.jpeg';
