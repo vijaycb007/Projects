@@ -351,7 +351,7 @@ export const experiences = [
         "A Spring MVC and PostgreSQL-based web app for managing books, students, and issue records efficiently through an organized MVC architecture.",
       image: lms,
       tags: ["Java", "Spring MVC", "HTML/CSS", "PostgreSQL"],
-      github: "https://github.com/vijaycb007/Projects/tree/main/Shopee",
+      github: "https://github.com/vijaycb007/Projects/tree/main/Library-Management-System",
       webapp: "",
     },
     {
