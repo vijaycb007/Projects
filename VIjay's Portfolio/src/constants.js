@@ -21,6 +21,8 @@ import PythonLogo from './assets/tech_logo/python.png';
 import renderLogo from './assets/tech_logo/renderLogo.svg';
 import springLogo from './assets/tech_logo/springLogo.png';
 import hibernateLogo from './assets/tech_logo/hibernateLogo.png';
+import postmanLogo from './assets/tech_logo/postmanLogo.png';
+import springtoolsLogo from './assets/tech_logo/springtoolsLogo.jpeg';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
@@ -88,7 +90,9 @@ export const SkillsInfo = [
       { name: 'Render', logo: renderLogo },
       { name: 'Adobe XD', logo: adobexdLogo },
       { name: 'MySQL', logo: MySQLLogo },
-      { name: 'PostgreSQL', logo: postgreSQLLogo }
+      { name: 'PostgreSQL', logo: postgreSQLLogo },
+      { name: 'Postman API Tool', logo: postmanLogo },
+      { name: 'Spring Tools for Eclipse', logo: springtoolsLogo },
     ],
   },
 ];
