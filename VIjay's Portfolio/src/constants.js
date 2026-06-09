@@ -22,7 +22,7 @@ import renderLogo from './assets/tech_logo/renderLogo.svg';
 import springLogo from './assets/tech_logo/springLogo.png';
 import hibernateLogo from './assets/tech_logo/hibernateLogo.png';
 import postmanLogo from './assets/tech_logo/postmanLogo.png';
-import springtoolsLogo from './assets/tech_logo/springtoolsLogo.jpeg';
+import springtoolsLogo from './assets/tech_logo/springtoolsLogo.jpg';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
