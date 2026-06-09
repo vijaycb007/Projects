@@ -60,15 +60,17 @@ const About = () => {
               isLight ? "text-[#4b5563]" : "text-gray-400"
             }`}
           >
-            I am an aspiring Java Full Stack Developer with hands-on experience 
-            in frontend technologies like HTML, CSS, JavaScript, along with 
-            backend development using Java, SQL, and databases such as MySQL and 
-            PostgreSQL. I enjoy building end-to-end web applications and continuously 
-            improving my backend and system-design skills in Spring(Java).
+            I am an aspiring Entry level Java Full Stack Developer with hands-on experience 
+            in frontend technologies like HTML, CSS, JavaScript, and backend 
+            development using Java, SQL, and databases such as MySQL and 
+            PostgreSQL along with libraries and frameworks such as Hibernate Framework (ORM), 
+            Spring Framework and also skilled in React JS and Tailiwind CSS. 
+            I enjoy building end-to-end web applications and continuously 
+            improving my backend and system-design skills.
           </p>
           {/* Resume Link */}
           <a
-            href="https://drive.google.com/file/d/1rORiaAPJY49HtuRc-EN9nuFEYyygu6rt/view?usp=sharing"
+            href="https://drive.google.com/drive/u/0/folders/1jFc6N8l35XNOgDHk-42MDQQ_dK4EIvFS"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
