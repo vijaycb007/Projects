@@ -45,6 +45,7 @@ import IMS from './assets/work_logo/IMS.png';
 import Shopeee from './assets/work_logo/Shopeee.png';
 import naturesbasket from './assets/work_logo/naturesbasket.png';
 import lms from './assets/work_logo/lms.png';
+import obs from './assets/work_logo/obs.png';
 
 //certificates section
 import adobe from './assets/certificates/adobe.jpeg';
@@ -229,7 +230,7 @@ export const experiences = [
       role: "Java FullStack developer Trainee",
       company: "JSpiders",
       date: "July 2025 - present",
-      desc: "Joined as a trainee in Jspiders as a Java FullStack developer.",
+      desc: "Joined Jspiders for training of Java FullStack development",
       skills: [
         "SQL",
         "Java",
@@ -239,7 +240,10 @@ export const experiences = [
         "JDBC", 
         "Hibernate",
         "Servlets and JSP's",
-        "Spring MVC"
+        "Spring MVC",
+        "SpringBoot",
+        "Spring Data JPA",
+        "React JS"
       ],
     link: "",
     },
@@ -364,6 +368,16 @@ export const experiences = [
     },
     {
       id: 9,
+      title: "Online Banking System",
+      description:
+        "Built a full-stack Banking System with React.js and Vite, featuring account management, fund transfers, transaction history, RESTful API integration, and authentication-protected routing with real-time form validation.",
+      image: obs,
+      tags: [ "HTML/CSS", "JavaScript", "React JS", "Tailwind CSS"],
+      github: "https://github.com/vijaycb007/Projects/tree/main/online-banking-system",
+      webapp: "",
+    },
+    {
+      id: 10,
       title: "Nature's Basket",
       description:
         "a Figma-based UI/UX for an organic grocery shopping platform focused on user-centric navigation, minimalist aesthetics, smart cart features, and intuitive profile management, delivering a seamless and engaging shopping experience.",
@@ -373,7 +387,7 @@ export const experiences = [
       webapp: "https://www.figma.com/proto/tB2jos2BG7kaMsk2N8t1OK/nature-s-basket?node-id=0-1&t=q2iat1riLasTSB0B-1"
     },
     {
-      id: 10,
+      id: 11,
       title: "Buzzly",
       description:
         "Designed Buzzly, a modern mobile app combining news, blogs, and personalized content. Focused on clean UI, intuitive onboarding, blog creation, and smooth content management for an enhanced reading experience.",
