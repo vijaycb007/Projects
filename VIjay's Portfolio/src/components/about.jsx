@@ -70,7 +70,7 @@ const About = () => {
           </p>
           {/* Resume Link */}
           <a
-            href="https://drive.google.com/drive/u/0/folders/1jFc6N8l35XNOgDHk-42MDQQ_dK4EIvFS"
+            href="https://drive.google.com/file/d/1UssWJXCbji5LxfnNWooejD49mGmt0GXb/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
