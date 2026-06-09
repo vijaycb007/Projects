@@ -19,6 +19,8 @@ import EclipseLogo from './assets/tech_logo/eclipse_logo.png';
 import turboCLogo from './assets/tech_logo/turboC.png';
 import PythonLogo from './assets/tech_logo/python.png';
 import renderLogo from './assets/tech_logo/renderLogo.svg';
+import springLogo from './assets/tech_logo/springLogo.png';
+import hibernateLogo from './assets/tech_logo/hibernateLogo.png';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
@@ -68,8 +70,8 @@ export const SkillsInfo = [
       { name: 'Java', logo: javaLogo },
       { name: 'Python', logo: PythonLogo },
       { name: 'SQL', logo: sqlLogo },
-      { name: 'MySQL', logo: MySQLLogo },
-      { name: 'PostgreSQL', logo: postgreSQLLogo }
+      { name:'Hibernate Framework', logo: hibernateLogo },
+      { name: 'Spring Framework', logo: springLogo }
     ],
   },
   {
@@ -85,6 +87,8 @@ export const SkillsInfo = [
       { name: 'Netlify', logo: netlifyLogo },
       { name: 'Render', logo: renderLogo },
       { name: 'Adobe XD', logo: adobexdLogo },
+      { name: 'MySQL', logo: MySQLLogo },
+      { name: 'PostgreSQL', logo: postgreSQLLogo }
     ],
   },
 ];
