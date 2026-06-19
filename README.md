@@ -1,6 +1,13 @@
 # 🚀 Projects Showcase
 
-Welcome to my collection of Projects! This repository includes a set of frontend and backend apps built using modern JavaScript, React.js, and related tools. Each project is organized into its own folder and includes full source code, ready to run.
+Welcome to my collection of Projects! This repository includes a set of frontend and backend apps built using modern JavaScript, React.js, Java, SQL and related tools. Each project is organized into its own folder and includes full source code, ready to run.
+
+---
+
+## 📁 WebTech Project
+| Project Name | Description |
+|--------------|-------------|
+| [🛍️ Shopee - E-Commerce Website] | Built and deployed a multi-page e-commerce website using HTML, CSS, and JavaScript, featuring user authentication, product catalog, shopping cart functionality, and real-time cart management with Local Storage persistence. |
 
 ---
 
@@ -12,6 +19,7 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 | [🎬 imdb-clone] | A mini IMDb clone that fetches movie data using an API and displays trending content with search functionality. |
 | [🌦️ skycast] | A modern weather app with live video backgrounds based on real-time weather conditions, animated splash screen, responsive UI, and smooth video transitions. Powered by OpenWeatherMap API with beautiful climate-based video effects. |
 | [💼 My-portfolio] | A responsive, modern developer portfolio built with React, Vite, and Tailwind CSS. Showcases my featured projects, skills, and contact information — all in a sleek single-page design.|
+| [🏦 Online Banking System ] | Developed a full-stack Banking System using React.js, Vite, Axios, and JSON Server, supporting account management, fund transfers, deposits, withdrawals, and transaction tracking through RESTful APIs. Implemented secure authentication, state management with React Context API, form validation, and a responsive user interface optimized for seamless banking operations across devices. |
 
 ---
 
@@ -34,26 +42,28 @@ Welcome to my collection of Projects! This repository includes a set of frontend
 | Project Name | Description |
 |--------------|-------------|
 | [📦 Inventory Management System ] | Inventory Management Application – Core Java, JDBC, PostgreSQL , React.js , TailwindCSS. Inventory Management System built with a Java backend and React frontend to manage products, stock levels, sales, and total inventory value in a single dashboard, with search and popup-based sell/restock flows.Supports adding products, automatic low‑stock alerts, detailed stock history, and automatic removal of products when stock reaches zero for a clean, real‑world UX.|
+| [📚 Library Management System ] | Library Management System – Core Java, Spring MVC, PostgreSQL , HTML, CSS. Developed a full-stack Library Management System  to manage books, students, and issue/return transactions. Implemented complete CRUD functionality following the MVC architecture and integrated Hibernate ORM for efficient database operations. Designed a responsive JSP-based user interface to enable seamless navigation and streamlined library record management. |
 
 ---
 
 ## 🛠 Tech Stack
 
+- 🧱 **HTML5**, 🎨 **CSS3**, ⚙️ **JavaScript**
 - ⚛️ **React.js**
 - 🎨 **Tailwind CSS**
 - 📦 **Vite / Create React App**
 - 🔗 **Axios / Fetch API**
-- 🎞 **Dynamic Video Backgrounds**
-- 🌦️ **OpenWeatherMap API Integration**
+- 🌦️ **OpenWeather API Integration**
+- 🔗 **Context API**
 - 🐍 **Flask** (Python backend for Egg Timer)
-- 🌐 **Service Workers** (for offline support)
-- 🔔 **Custom Sounds & Notifications**
-- 🎨 **Bootstrap 5** for selected UIs
 - 💻 **Java**
 - 📈 **SQL**
 - 🐘 **PostgreSQL**
+- 🍃 **Spring Framework** - **MVC, Boot, Data JPA, IOC, DI**
+- ⚙️ **Hibernate ORM**
+- 🔗 **REST API's**
 ---
- ##For Hands2Speech
+ ## For Hands2Speech
 
 🌐 Frontend
 -🧱 HTML5, 🎨 CSS3, ⚙️ JavaScript
@@ -84,6 +94,6 @@ For Hands2speech only the scripts are present not the data so you have to prepar
 Navigate into any project folder and run:
 
 ```bash
+(for react projects)
 npm install
 npm run dev
->>>>>>> 43ecd4390064f27ab884f851201e41a14eeaa0bf
