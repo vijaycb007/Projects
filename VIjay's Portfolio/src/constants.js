@@ -23,6 +23,7 @@ import springLogo from './assets/tech_logo/springLogo.png';
 import hibernateLogo from './assets/tech_logo/hibernateLogo.png';
 import postmanLogo from './assets/tech_logo/postmanLogo.png';
 import springtoolsLogo from './assets/tech_logo/springtoolsLogo.jpg';
+import gitLogo from './assets/tech_logo/gitLogo.png';
 
 // Experience Section Logo's
 import Rablologo from './assets/company_logo/Rablologo.png';
@@ -81,6 +82,7 @@ export const SkillsInfo = [
     title: 'Tools',
     skills: [
       { name: 'GitHub', logo: githubLogo },
+      { name: 'Git Bash', logo: gitLogo },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Turbo C', logo: turboCLogo },
       { name: 'Figma', logo: figmaLogo },
