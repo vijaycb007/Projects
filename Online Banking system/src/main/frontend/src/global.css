@@ -1,0 +1,337 @@
+@import "tailwindcss";
+
+@layer components {
+  .display-flex {
+    @apply flex justify-center items-center;
+  }
+  .display-flex-col {
+    @apply flex justify-center items-center flex-col;
+  }
+  .navLink {
+    @apply p-1.5 rounded-xl hover:bg-amber-50 hover:text-blue-500 transition-colors;
+  }
+  .primaryButton {
+    @apply bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-2 rounded-full transition duration-200;
+  }
+  .secondaryButton {
+    @apply rounded-full font-medium bg-amber-600 text-white px-8 py-2 hover:bg-amber-700;
+  }
+  .input {
+    @apply border border-gray-300 h-11 w-80 rounded-xl px-4 text-left shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition appearance-none;
+  }
+  .label {
+    @apply text-gray-700 font-bold text-sm self-start pl-1;
+  }
+  .form {
+    @apply h-140 w-130 flex items-center justify-center flex-col gap-3 p-5;
+  }
+  .formInner {
+    @apply h-140 w-250 flex items-center rounded-[60px] shadow-xl hover:scale-105 transition-transform duration-300 overflow-hidden border border-gray-200;
+  }
+  .formOuter {
+    @apply h-[90vh] flex items-center justify-center;
+  }
+  .card {
+    @apply h-80 w-120 flex place-content-evenly items-center flex-col rounded-4xl shadow-xl hover:scale-105 transition-transform duration-300 overflow-hidden border border-gray-200;
+  }
+  .accountsCardButton {
+    @apply h-10 w-30 border border-blue-600 text-blue-600 hover:bg-blue-50 rounded-xl text-lg;
+  }
+  .footerIcons {
+    @apply text-xl flex justify-center items-center border border-gray-600 p-4 rounded-xl text-gray-400 hover:text-white hover:border-white transition-colors cursor-pointer;
+  }
+  .h4 {
+    @apply text-xl font-bold;
+  }
+  .list {
+    @apply h-65 w-35 flex flex-col gap-5;
+  }
+  .listItems {
+    @apply font-semibold text-shadow-lime-100;
+  }
+  .buttonContainer {
+    @apply flex justify-evenly w-full;
+  }
+  .popup {
+    @apply bg-white flex justify-center items-center flex-col rounded-2xl gap-4;
+  }
+  .cancel {
+    @apply bg-red-500 hover:bg-red-700 text-white font-semibold px-8 py-2 rounded-full transition duration-200;
+  }
+  .tableHead {
+    @apply text-center text-lg text-gray-600 font-bold;
+  }
+  .tableData {
+    @apply text-center text-lg;
+  }
+  .hero {
+    background-color: #1e2a4a;
+    background-image:
+      radial-gradient(
+        ellipse 70% 60% at 20% 50%,
+        rgba(37, 99, 235, 0.25) 0%,
+        transparent 70%
+      ),
+      radial-gradient(
+        ellipse 50% 70% at 80% 30%,
+        rgba(234, 124, 30, 0.12) 0%,
+        transparent 60%
+      );
+  }
+  .deposit-hero-tag {
+    @apply bg-white/10 border-white/15 border backdrop-blur-md px-4 py-2 rounded-full;
+  }
+  .deposit-hero-card {
+    @apply flex justify-center items-center flex-col h-35 w-50 p-3.5;
+  }
+  .deposit-plan {
+    @apply h-[80vh] w-85 rounded-2xl border-gray-200 border shadow-2xl hover:border-blue-500 hover:scale-105 transition-transform duration-300 p-5 flex items-center flex-col justify-evenly;
+  }
+  .display-plan-icon-container {
+    @apply h-15 w-full flex items-center justify-start;
+  }
+  .display-plan-icon {
+    @apply h-13.5 w-13.5 rounded-xl flex items-center justify-center text-2xl;
+  }
+  .aboutCards {
+    @apply border border-gray-400 h-50 w-70 flex justify-center items-center flex-col rounded-xl;
+  }
+  .aboutIcon {
+    @apply text-blue-500 text-5xl;
+  }
+  .card2Heading {
+    @apply text-lg font-medium text-gray-900;
+  }
+  .card2Info {
+    @apply w-100 text-sm text-gray-600;
+  }
+  .card2List {
+    @apply list-['✨'] flex flex-col gap-2 pl-5;
+  }
+  .card2ListItems {
+    @apply text-sm text-gray-500;
+  }
+  .card2ButtonsContainer {
+    @apply w-100 flex place-content-evenly items-stretch;
+  }
+  .card2KnowMoreButtons {
+    @apply py-2.5 px-6 rounded-full text-sm font-medium border;
+  }
+  .navbar-gradient {
+    background: linear-gradient(90deg, #1d4ed8 0%, #2563eb 45%, #4f46e5 100%);
+  }
+  .nav-pill {
+    @apply px-4 py-2 rounded-lg text-sm font-medium text-white/75 hover:text-white hover:bg-white/10 transition-colors;
+  }
+  .nav-pill-active {
+    @apply px-4 py-2 rounded-lg text-sm font-semibold text-white bg-white/20;
+  }
+  .nav-avatar {
+    @apply h-7.5 w-7.5 rounded-full bg-white/20 border border-white/40 flex items-center justify-center font-bold text-xs text-white;
+  }
+  .nav-logout {
+    @apply bg-white text-blue-700 font-bold px-4.5 py-2 rounded-lg text-sm hover:bg-blue-50 transition-colors;
+  }
+  .stat-card {
+    @apply w-120 h-80 rounded-3xl p-8 flex flex-col justify-center text-white relative overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300;
+  }
+  .stat-card.loan-card {
+    background: radial-gradient(circle at 30% 20%, #3b5bdb, #1d2b6b);
+  }
+  .stat-card.deposit-card {
+    background: radial-gradient(circle at 30% 20%, #f59e0b, #b45309);
+  }
+  .stat-card .stat-number {
+    @apply text-5xl font-extrabold mb-1;
+  }
+  .stat-card .stat-label {
+    @apply text-sm opacity-80 mb-5;
+  }
+  .stat-card h2 {
+    @apply text-lg font-semibold mb-2;
+  }
+  .stat-card p {
+    @apply text-sm opacity-85 leading-relaxed mb-6;
+  }
+  .stat-card-btn {
+    @apply bg-white font-bold px-6 py-2.5 rounded-xl text-sm w-fit transition-colors;
+  }
+  .stat-card-btn.loan-btn {
+    @apply text-[#1d2b6b] hover:bg-blue-50;
+  }
+  .stat-card-btn.deposit-btn {
+    @apply text-[#b45309] hover:bg-amber-50;
+  }
+  .aboutCard2 {
+    @apply border border-gray-200 h-52 w-70 flex justify-center items-center flex-col rounded-2xl shadow-sm bg-white gap-1;
+  }
+  .aboutIconWrap {
+    @apply h-14 w-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-2;
+  }
+  .aboutIcon2 {
+    @apply text-blue-500 text-2xl;
+  }
+  .footer-cta {
+    background: linear-gradient(90deg, #1d4ed8 0%, #4f46e5 100%);
+  }
+  .contact-card {
+    @apply bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col items-start gap-3 w-100;
+  }
+  .contact-card h2 {
+    @apply text-lg font-bold mb-1;
+  }
+  .contact-card p {
+    @apply text-sm text-gray-300;
+  }
+  /* Account Card - Classic Bank Blue */
+  .accountCardShell {
+    @apply w-95 rounded-3xl overflow-hidden shadow-xl;
+    background: linear-gradient(160deg, #1e3a8a, #2563eb);
+  }
+  .accountCardTop {
+    @apply relative px-6 pt-6 pb-9;
+  }
+  .accountCardGlow {
+    @apply absolute rounded-full opacity-35;
+    width: 140px;
+    height: 140px;
+    background: #93c5fd;
+    top: -40px;
+    right: -30px;
+    filter: blur(40px);
+  }
+  .accountCardBadge {
+    @apply text-xs font-semibold px-3 py-1 rounded-full bg-white/15 text-white border border-white/20;
+  }
+  .accountBalancePlate {
+    @apply bg-white rounded-2xl shadow-md px-5 py-4 mx-6 -mt-6 relative;
+  }
+  .accountActionsRow {
+    @apply grid grid-cols-4 gap-0 mt-5 mx-4 mb-4 rounded-xl overflow-hidden bg-white/10 backdrop-blur-sm;
+  }
+  .accountActionBtn {
+    @apply flex flex-col items-center gap-1 py-3 text-white hover:bg-white/15 transition-colors;
+  }
+  .accountActionBtnDelete {
+    @apply flex flex-col items-center gap-1 py-3 text-red-200 hover:bg-red-500/30 transition-colors;
+  }
+
+  /* ===== Shared Auth Styles (Login / Register / Create Account) ===== */
+  .authLabel {
+    @apply text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1 block;
+  }
+  .authInput {
+    @apply w-full border border-gray-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500 transition;
+  }
+  .authBtnRow {
+    @apply flex gap-3 mt-7;
+  }
+  .authSubmitBtn {
+    @apply flex-1 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-xl transition-colors;
+  }
+  .authResetBtn {
+    @apply px-6 border border-gray-200 text-gray-500 hover:bg-gray-50 font-semibold py-3 rounded-xl transition-colors;
+  }
+  .authBrandPanel {
+    @apply w-80 p-10 text-white relative overflow-hidden flex flex-col justify-between;
+    background: linear-gradient(160deg, #1e3a8a, #2563eb);
+  }
+  .authBrandGlow {
+    @apply absolute rounded-full opacity-35;
+    width: 200px;
+    height: 200px;
+    background: #93c5fd;
+    top: -40px;
+    right: -50px;
+    filter: blur(60px);
+  }
+  .authBrandBadge {
+    @apply text-xs font-semibold px-3 py-1 rounded-full bg-white/15 text-white border border-white/20 w-fit;
+  }
+
+  /* Register Page */
+  .registerShell {
+    @apply w-220 rounded-3xl overflow-hidden shadow-2xl flex;
+  }
+  .registerFormPanel {
+    @apply flex-1 bg-white p-10;
+  }
+  .registerRow {
+    @apply grid grid-cols-2 gap-4;
+  }
+
+  /* Login Page */
+  .loginShell {
+    @apply w-190 rounded-3xl overflow-hidden shadow-2xl flex;
+  }
+  .loginFormPanel {
+    @apply flex-1 bg-white p-10;
+  }
+
+  /* Create Account - Form + Live Preview, Type Picker Cards */
+  .createAccountShell {
+    @apply w-190 rounded-3xl overflow-hidden shadow-2xl flex bg-white border border-gray-100;
+  }
+  .createAccountFormPanel {
+    @apply flex-1 p-9;
+  }
+  .createAccountTypeGrid {
+    @apply grid grid-cols-3 gap-3;
+  }
+  .createAccountTypeBtn {
+    @apply border border-gray-200 rounded-xl p-3 text-center hover:border-blue-300 transition-colors;
+  }
+  .createAccountTypeBtnActive {
+    @apply border-2 border-blue-600 bg-blue-50 rounded-xl p-3 text-center;
+  }
+  .createAccountTypeIcon {
+    @apply text-xl mb-1;
+  }
+  .createAccountTypeLabel {
+    @apply text-xs font-semibold text-gray-500;
+  }
+  .createAccountTypeLabelActive {
+    @apply text-xs font-semibold text-blue-700;
+  }
+  .createAccountPreviewPanel {
+    @apply w-64 bg-blue-50 p-6 border-l border-gray-100 flex flex-col justify-center;
+  }
+  .createAccountPreviewCard {
+    @apply rounded-2xl p-4 text-white shadow-md;
+    background: linear-gradient(160deg, #1e3a8a, #2563eb);
+  }
+
+  /* Deposit Form (FD / RD) - Split panel with live summary */
+  .depositShell {
+    @apply w-full max-w-4xl rounded-3xl overflow-hidden shadow-xl flex border border-gray-200;
+  }
+  .depositFormPanel {
+    @apply flex-1 bg-white p-9;
+  }
+  .depositSummaryPanel {
+    @apply w-75 p-8 text-white flex flex-col justify-between;
+    background: linear-gradient(160deg, #1e3a8a, #2563eb);
+  }
+  .depositSummaryTitle {
+    @apply text-xs font-bold uppercase tracking-wide opacity-70 mb-4;
+  }
+  .depositSummaryRow {
+    @apply flex justify-between py-2.5 border-b border-white/15 text-sm;
+  }
+  .depositMaturityLabel {
+    @apply text-xs opacity-70 mt-5;
+  }
+  .depositMaturity {
+    @apply text-3xl font-extrabold;
+  }
+  .depositField label {
+    @apply text-xs font-bold uppercase tracking-wide text-gray-500 block mb-1.5;
+  }
+  .depositField input,
+  .depositField select {
+    @apply w-full border-0 border-b-2 border-gray-200 px-0.5 py-2 text-sm bg-transparent focus:outline-none focus:border-blue-500 transition;
+  }
+  .depositSubmitBtn {
+    @apply bg-white text-blue-900 font-bold py-3 rounded-xl w-full hover:bg-blue-50 transition-colors;
+  }
+}

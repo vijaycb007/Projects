@@ -1,0 +1,151 @@
+{
+  "register": [
+    {
+      "username": "Alex",
+      "email": "alex@gmail.com",
+      "password": "1234",
+      "phNum": "1234567890",
+      "id": "buwA5XyYqZ0"
+    },
+    {
+      "username": "vijay",
+      "email": "vijay@gmail.com",
+      "password": "123",
+      "phNum": "9874563210",
+      "id": "aKFBgVK1TRI"
+    },
+    {
+      "username": "Vijay",
+      "email": "v@gmail.com",
+      "password": "12345",
+      "phNum": "8867174147",
+      "id": "3N4t4PrXbv4"
+    }
+  ],
+  "accounts": [
+    {
+      "AccName": "Mysuru CIty Bank",
+      "Acctype": "Savings",
+      "InitialBalanace": 152000,
+      "id": "MCB570001"
+    },
+    {
+      "AccName": "Vijay",
+      "Acctype": "Savings",
+      "InitialBalanace": 58000,
+      "id": "LUYaGjw6bZE"
+    },
+    {
+      "AccName": "Alex",
+      "Acctype": "Current",
+      "InitialBalanace": 30000,
+      "id": "0Pg-xC_mIXU"
+    }
+  ],
+  "transactions": [
+    {
+      "accountId": "LUYaGjw6bZE",
+      "accountName": "Vijay",
+      "amount": "10000",
+      "description": "Investement",
+      "type": "Deposit",
+      "date": "29/05/2026, 17:23:56",
+      "id": "j5DEOzeT9N4"
+    },
+    {
+      "accountId": "0Pg-xC_mIXU",
+      "accountName": "Alex",
+      "amount": "5000",
+      "description": "party",
+      "type": "Withdraw",
+      "date": "29/05/2026, 17:24:13",
+      "id": "VBqEseA-AK0"
+    },
+    {
+      "accountId": "LUYaGjw6bZE",
+      "accountName": "Vijay",
+      "amount": "5000",
+      "description": "Loan",
+      "type": "Withdraw",
+      "date": "29/05/2026, 22:07:25",
+      "id": "kSWZ6A-B9qU"
+    },
+    {
+      "fromAccountNo": "0Pg-xC_mIXU",
+      "toAccountNo": "LUYaGjw6bZE",
+      "toAccountName": "Vijay",
+      "amount": "10000",
+      "date": "29/05/2026, 23:00:04",
+      "description": "Bonus",
+      "type": "Transfer",
+      "id": "rVooX5xWzGM"
+    },
+    {
+      "fromAccountNo": "0Pg-xC_mIXU",
+      "toAccountNo": "0Pg-xC_mIXU",
+      "toAccountName": "Alex",
+      "amount": "5000",
+      "date": "29/05/2026, 23:19:29",
+      "description": "Gift",
+      "type": "Transfer",
+      "id": "-G0puNvh0wM"
+    },
+    {
+      "accountId": "0Pg-xC_mIXU",
+      "accountName": "Alex",
+      "amount": "15000",
+      "description": "Salary",
+      "type": "Deposit",
+      "date": "29/05/2026, 23:21:13",
+      "id": "bL3g54eoSbM"
+    },
+    {
+      "accountId": "0Pg-xC_mIXU",
+      "accountName": "Alex",
+      "amount": "100000",
+      "description": "Loan - Gold",
+      "type": "Deposit",
+      "date": "31/05/2026, 15:41:25",
+      "id": "gVw_Cm3V3u4"
+    },
+    {
+      "accountId": "LUYaGjw6bZE",
+      "accountName": "Vijay",
+      "amount": "50000",
+      "description": "Education - Loan ",
+      "type": "Deposit",
+      "date": "31/05/2026, 16:01:41",
+      "id": "-HUce5iZtH8"
+    },
+    {
+      "fromAccountNo": "LUYaGjw6bZE",
+      "toAccountNo": "Iy5_4JyG2GA",
+      "toAccountName": "Mysuru City Bank",
+      "amount": "52000",
+      "date": "31/05/2026, 16:02:39",
+      "description": "Loan Repayment",
+      "type": "Transfer",
+      "id": "bv1u7I0iQUo"
+    },
+    {
+      "accountId": "LUYaGjw6bZE",
+      "accountName": "Vijay",
+      "amount": "100000",
+      "description": "Personal - Loan ",
+      "type": "Deposit",
+      "date": "02/06/2026, 11:08:17",
+      "id": "5vpUo-KubjE"
+    },
+    {
+      "fromAccountNo": "LUYaGjw6bZE",
+      "toAccountNo": "MCB570001",
+      "toAccountName": "Mysuru City Bank",
+      "amount": "100000",
+      "date": "02/06/2026, 11:09:15",
+      "description": "Loan Repayment",
+      "type": "Transfer",
+      "id": "xg_FkYlZfqs"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
