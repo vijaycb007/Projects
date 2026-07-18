@@ -372,10 +372,10 @@ export const experiences = [
       id: 9,
       title: "Online Banking System",
       description:
-        "Built a full-stack Banking System with React.js and Vite, featuring account management, fund transfers, transaction history, RESTful API integration, and authentication-protected routing with real-time form validation.",
+        "Built a full-stack Banking System with React.js, Spring Boot, and PostgreSQL, featuring account management, fund transfers, deposits/withdrawals, FD/RD & loan modules, and RESTful API integration with authentication-protected routing. Implemented a layered backend architecture (Controller-Service-DAO-Repository) with custom exception handling and DTOs, alongside a responsive React 19 + Tailwind UI with real-time validation and toast notifications.",
       image: obs,
-      tags: [ "HTML/CSS", "JavaScript", "React JS", "Tailwind CSS"],
-      github: "https://github.com/vijaycb007/Projects/tree/main/online-banking-system",
+      tags: [ "Java", "Spring Boot", "Spring Data JPA", "PostgreSQL",  "React JS", "Tailwind CSS"],
+      github: "https://github.com/vijaycb007/Projects/tree/main/Online%20Banking%20system",
       webapp: "",
     },
     {
