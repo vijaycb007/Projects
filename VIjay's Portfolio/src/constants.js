@@ -56,6 +56,7 @@ import html from './assets/certificates/html.jpeg';
 import javascript from './assets/certificates/javascript.jpeg';
 import react from './assets/certificates/react.png';
 import reacttest from './assets/certificates/reacttest.jpg';
+import jspiders from './assets/certificates/jspidersCertificate.jpeg';
 
 export const SkillsInfo = [
   {
@@ -199,6 +200,26 @@ export const certificates = [
         "CSS",
       ],
     },
+  {
+      id: 7,
+      img: jspiders,
+      name: "Certificate of Course Completion",
+      company: "JSpiders",
+      date: "July 2026",
+      desc: "Completed a Java Full Stack Development certification from JSpiders, covering Core Java, J2EE, SQL, Web Technologies, and Frameworks.",
+      skills: [
+        "Java",
+        "HTML/CSS",
+        "JavaScript",
+        "React",
+        "Spring Framework (MVC, Data JPA, Boot)",
+        "Hibernate ORM Framework",
+        "SQL",
+        "PostgreSQL",
+        "JDBC",
+        "Servlets and JSP's"
+      ],
+    },
   ];
 
 export const experiences = [
@@ -231,7 +252,7 @@ export const experiences = [
       img: jspiderslogo,
       role: "Java FullStack developer Trainee",
       company: "JSpiders",
-      date: "July 2025 - present",
+      date: "July 2025 - July 2026",
       desc: "Joined Jspiders for training of Java FullStack development",
       skills: [
         "SQL",
